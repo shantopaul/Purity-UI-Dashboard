@@ -40,9 +40,6 @@ export default function SignUp() {
         {/* Header */}
         <div className="text-center flex flex-col gap-1.5">
           <h2 className="text-lg font-bold text-dark">Register with</h2>
-          <p className="text-xs text-gray-400 font-semibold leading-relaxed mt-1">
-            Choose a social platform or enter email credentials.
-          </p>
         </div>
 
         {/* Social Buttons row */}
@@ -53,7 +50,7 @@ export default function SignUp() {
             className="w-16 h-12 rounded-xl border border-gray-150 flex items-center justify-center text-dark hover:bg-gray-50 transition-colors cursor-pointer"
           >
             <svg
-              className="w-4 h-4 fill-current text-blue-600"
+              className="w-4 h-4 fill-current text-dark"
               viewBox="0 0 24 24"
             >
               <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
@@ -76,7 +73,7 @@ export default function SignUp() {
             className="w-16 h-12 rounded-xl border border-gray-150 flex items-center justify-center text-dark hover:bg-gray-50 transition-colors cursor-pointer"
           >
             <svg
-              className="w-4 h-4 fill-current text-red-500"
+              className="w-4 h-4 fill-current text-dark"
               viewBox="0 0 24 24"
             >
               <path d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.51 0-6.357-2.827-6.357-6.314S10.481 5.88 13.99 5.88c1.528 0 2.923.542 4.015 1.442l3.053-3.03C19.167 2.502 16.74 1.5 13.99 1.5c-5.79 0-10.49 4.672-10.49 10.413 0 5.74 4.7 10.413 10.49 10.413 6.03 0 10.024-4.214 10.024-10.12 0-.682-.061-1.344-.174-1.92z" />
