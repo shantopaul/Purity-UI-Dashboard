@@ -19,10 +19,10 @@ export default function Topbar() {
 
   return (
     <header
-      className={`flex flex-col md:flex-row md:items-center justify-between px-6 py-4 gap-4 md:gap-0 sticky top-0 z-30 transition-all duration-150 ${
+      className={`flex flex-col md:flex-row md:items-center justify-between px-6 gap-4 md:gap-0 sticky top-0 z-30 transition-all duration-150 ${
         isProfilePage
-          ? "bg-transparent backdrop-blur-none"
-          : "backdrop-blur-md bg-gray-50/40"
+          ? "bg-transparent backdrop-blur-none pt-8 pb-4"
+          : "backdrop-blur-md bg-gray-50/40 py-4"
       }`}
     >
       {/* Breadcrumbs & Page Title */}
