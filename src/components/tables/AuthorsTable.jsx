@@ -141,10 +141,10 @@ export default function AuthorsTable() {
                 {/* Status Indicator */}
                 <td className="py-3.5">
                   <span
-                    className={`inline-flex items-center px-2 py-0.5 rounded-md text-[10px] font-extrabold ${
+                    className={`inline-flex items-center px-2 py-0.5 rounded-md text-[10px] font-extrabold text-white ${
                       author.status === "Online"
-                        ? "bg-success/10 text-success"
-                        : "bg-[#718096]/10 text-[#718096]"
+                        ? "bg-[#48BB78]"
+                        : "bg-[#718096]"
                     }`}
                   >
                     {author.status}
