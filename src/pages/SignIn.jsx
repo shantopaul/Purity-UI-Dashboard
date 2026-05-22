@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import backgroundImg from "../assets/images/background.png";
-import dashboardScreenImg from "../assets/images/dashboard-screen.png";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
@@ -19,18 +18,18 @@ export default function SignIn() {
       <div className="w-full lg:w-[50%] flex flex-col justify-center items-center px-6 md:px-12 py-12">
         <div className="w-full max-w-[350px] mx-auto flex flex-col gap-6">
           {/* Form Header */}
-          <div className="flex flex-col gap-1.5">
-            <h2 className="text-[32px] font-bold text-dark tracking-tight leading-none">
-              Nice to see you!
+          <div className="flex flex-col gap-1">
+            <h2 className="text-[32px] font-bold text-primary tracking-tight leading-none">
+              Welcome Back
             </h2>
-            <p className="text-sm text-gray-400 font-normal mt-2 leading-relaxed">
+            <p className="text-xs text-gray-400 font-semibold mt-2.5 leading-relaxed">
               Enter your email and password to sign in
             </p>
           </div>
 
           {/* Form Inputs */}
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1.5">
               <label className="text-xs font-semibold text-gray-700 mb-1 ml-1 select-none">
                 Email
               </label>
@@ -44,7 +43,7 @@ export default function SignIn() {
               />
             </div>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1.5">
               <label className="text-xs font-semibold text-gray-700 mb-1 ml-1 select-none">
                 Password
               </label>
@@ -88,12 +87,12 @@ export default function SignIn() {
               type="submit"
               className="w-full h-[45px] bg-primary hover:bg-primary/90 text-white font-bold text-xs uppercase tracking-wider rounded-[15px] shadow-sm transition-all mt-4 cursor-pointer flex items-center justify-center"
             >
-              Sign In
+              SIGN IN
             </button>
           </form>
 
           {/* Footer Link redirect */}
-          <div className="text-center text-xs text-gray-400 font-medium mt-2 select-none">
+          <div className="text-center text-xs text-gray-400 font-semibold mt-2 select-none">
             Don't have an account?{" "}
             <Link
               to="/sign-up"
@@ -113,23 +112,19 @@ export default function SignIn() {
         {/* Subtle gradient overlay to match Figma */}
         <div className="absolute inset-0 bg-gradient-to-br from-teal-400/90 to-teal-600/90 mix-blend-multiply z-0" />
 
-        <div className="max-w-md w-full text-center flex flex-col items-center gap-4 z-10">
-          <h1 className="text-3xl font-black tracking-widest uppercase">
-            Purity UI Dashboard
-          </h1>
-          <p className="text-xs text-white/90 font-medium leading-relaxed max-w-sm">
-            Inspired by beautiful Figma designs, completely built with React and
-            Tailwind CSS. Clean, modular, and extremely responsive layouts.
-          </p>
-
-          {/* Floating perspective dashboard mockup */}
-          <div className="relative mt-10 w-[85%] max-w-[450px] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-white/20 transform -rotate-2 hover:rotate-0 transition-transform duration-500">
-            <img
-              src={dashboardScreenImg}
-              alt="Dashboard Preview"
-              className="w-full h-full object-cover object-left-top"
-            />
+        {/* Center Logo branding */}
+        <div className="flex items-center gap-4.5 z-10 select-none">
+          <div className="w-[74px] h-[74px] rounded-full bg-white flex items-center justify-center shadow-lg">
+            <svg
+              className="w-10 h-10 fill-current text-primary"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2L2 14h9v8l10-12h-9z" />
+            </svg>
           </div>
+          <span className="text-[54px] font-bold text-white tracking-tight font-sans">
+            chakra
+          </span>
         </div>
       </div>
     </div>

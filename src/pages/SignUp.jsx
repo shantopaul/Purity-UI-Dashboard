@@ -6,11 +6,11 @@ export default function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [agreeTerms, setAgreeTerms] = useState(true);
+  const [rememberMe, setRememberMe] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Signing up with:", { name, email, password, agreeTerms });
+    console.log("Signing up with:", { name, email, password, rememberMe });
   };
 
   return (
@@ -40,7 +40,7 @@ export default function SignUp() {
         {/* Header */}
         <div className="text-center flex flex-col gap-1.5">
           <h2 className="text-lg font-bold text-dark">Register with</h2>
-          <p className="text-xs text-gray-400 font-normal leading-relaxed mt-1">
+          <p className="text-xs text-gray-400 font-semibold leading-relaxed mt-1">
             Choose a social platform or enter email credentials.
           </p>
         </div>
@@ -95,7 +95,7 @@ export default function SignUp() {
 
         {/* Credentials form */}
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1.5">
             <label className="text-xs font-semibold text-gray-700 mb-1 ml-1 select-none">
               Name
             </label>
@@ -109,7 +109,7 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1.5">
             <label className="text-xs font-semibold text-gray-700 mb-1 ml-1 select-none">
               Email
             </label>
@@ -123,7 +123,7 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1.5">
             <label className="text-xs font-semibold text-gray-700 mb-1 ml-1 select-none">
               Password
             </label>
@@ -137,28 +137,28 @@ export default function SignUp() {
             />
           </div>
 
-          {/* Agree to terms switch */}
+          {/* Agree to terms switch - labeled "Remember me" in mockup */}
           <label className="flex items-center gap-2.5 cursor-pointer mt-2 select-none">
             <div className="relative flex items-center">
               <input
                 type="checkbox"
-                checked={agreeTerms}
-                onChange={() => setAgreeTerms(!agreeTerms)}
+                checked={rememberMe}
+                onChange={() => setRememberMe(!rememberMe)}
                 className="sr-only"
               />
               <div
                 className={`w-[34px] h-[20px] rounded-full transition-colors ${
-                  agreeTerms ? "bg-primary" : "bg-gray-200"
+                  rememberMe ? "bg-primary" : "bg-gray-200"
                 }`}
               />
               <div
                 className={`absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-white transition-transform shadow-sm ${
-                  agreeTerms ? "translate-x-3.5" : "translate-x-0"
+                  rememberMe ? "translate-x-3.5" : "translate-x-0"
                 }`}
               />
             </div>
             <span className="text-xs text-gray-500 font-normal ml-1">
-              I agree the Terms and Conditions
+              Remember me
             </span>
           </label>
 
@@ -167,12 +167,12 @@ export default function SignUp() {
             type="submit"
             className="w-full h-[45px] bg-primary hover:bg-primary/90 text-white font-bold text-xs uppercase tracking-wider rounded-[15px] shadow-sm transition-all mt-4 cursor-pointer flex items-center justify-center"
           >
-            Sign Up
+            SIGN UP
           </button>
         </form>
 
         {/* Footer Redirect */}
-        <div className="text-center text-xs text-gray-400 font-medium mt-2 select-none">
+        <div className="text-center text-xs text-gray-400 font-semibold mt-2 select-none">
           Already have an account?{" "}
           <Link
             to="/sign-in"
