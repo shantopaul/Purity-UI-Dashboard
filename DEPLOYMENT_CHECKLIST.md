@@ -8,8 +8,8 @@ This checklist outlines the verification steps, environment checks, and hosting 
 
 - `[ ]` Ensure `.env` is listed in `.gitignore` and is not committed to the repository.
 - `[ ]` Configure standard env files locally if required:
-  *   `VITE_APP_TITLE=Purity UI Dashboard`
-  *   `VITE_API_URL=` (Leave blank or set to local/staging URL for mock routes)
+  - `VITE_APP_TITLE=Purity UI Dashboard`
+  - `VITE_API_URL=` (Leave blank or set to local/staging URL for mock routes)
 - `[ ]` Verify that all dependency packages in `package.json` are current and have no vulnerability warnings (run `npm audit`).
 
 ---
@@ -52,20 +52,22 @@ npm run build
 ### 4.1 Production Hosting (Vercel / Netlify)
 
 #### Option A: Vercel Deployment
+
 1.  Connect your Git repository to Vercel.
 2.  Select the project repository.
 3.  Configure the build settings:
-    *   **Framework Preset:** `Vite`
-    *   **Build Command:** `npm run build`
-    *   **Output Directory:** `dist`
+    - **Framework Preset:** `Vite`
+    - **Build Command:** `npm run build`
+    - **Output Directory:** `dist`
 4.  Configure Environment Variables if applicable.
 5.  Click **Deploy**.
 
 #### Option B: Netlify Deployment
+
 1.  Connect your Git repository to Netlify.
 2.  Set build configuration:
-    *   **Build Command:** `npm run build`
-    *   **Publish Directory:** `dist`
+    - **Build Command:** `npm run build`
+    - **Publish Directory:** `dist`
 3.  Add redirect rules for single-page routing:
     Create a `public/_redirects` file with the following content:
     ```txt
@@ -74,6 +76,7 @@ npm run build
 4.  Click **Deploy site**.
 
 ### 4.2 CI/CD Configuration (GitHub Actions)
+
 To automate linting and build checks, create `.github/workflows/deploy.yml`:
 
 ```yaml
@@ -81,9 +84,9 @@ name: Build & Verify CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, develop]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   verify:
@@ -94,7 +97,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
       - name: Install Dependencies
         run: npm ci
       - name: Code Formatting Check
@@ -126,6 +129,6 @@ If a deployment introduces critical layout or routing bugs:
 
 1.  **Immediate Reversion:** Locate the deployment history in Vercel/Netlify. Identify the last stable commit build and click "Promote to Production" (Rollback).
 2.  **Git Branch Debugging:**
-    *   Check out the stable commit locally.
-    *   Create a debug branch from that point to isolate and resolve the issue.
-    *   Do not push fixes directly to `main` without validating them against the build checking suite.
+    - Check out the stable commit locally.
+    - Create a debug branch from that point to isolate and resolve the issue.
+    - Do not push fixes directly to `main` without validating them against the build checking suite.

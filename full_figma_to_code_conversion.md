@@ -3,23 +3,25 @@
 ## Full Professional Freelancing Client Project Brief
 
 ### Selected Project
+
 **Purity UI Dashboard — Figma/Image to React + Tailwind CSS Conversion**
 
 ### Uploaded Source Package
+
 The provided project package contains visual reference screens and assets for a dashboard UI conversion project.
 
 ## Source Files Available
 
-| File Name | Purpose | Size |
-|---|---|---:|
-| `Dashboard Screen.png` | Main dashboard page UI reference | 1920 × 1580 |
-| `Tables Screen.png` | Tables page UI reference | 1920 × 1137 |
-| `Profile Screen.png` | User profile page UI reference | 1920 × 1354 |
-| `Billing Screen.png` | Billing page UI reference | 1920 × 1196 |
-| `Sign In Screen.png` | Authentication sign-in page UI reference | 1920 × 1053 |
-| `Sign Up Screen.png` | Authentication sign-up page UI reference | 1920 × 1153 |
-| `Background.png` | Dark background image asset | 925 × 482 |
-| `IONIcon/D/document/text.svg` | SVG icon asset | SVG |
+| File Name                     | Purpose                                  |        Size |
+| ----------------------------- | ---------------------------------------- | ----------: |
+| `Dashboard Screen.png`        | Main dashboard page UI reference         | 1920 × 1580 |
+| `Tables Screen.png`           | Tables page UI reference                 | 1920 × 1137 |
+| `Profile Screen.png`          | User profile page UI reference           | 1920 × 1354 |
+| `Billing Screen.png`          | Billing page UI reference                | 1920 × 1196 |
+| `Sign In Screen.png`          | Authentication sign-in page UI reference | 1920 × 1053 |
+| `Sign Up Screen.png`          | Authentication sign-up page UI reference | 1920 × 1153 |
+| `Background.png`              | Dark background image asset              |   925 × 482 |
+| `IONIcon/D/document/text.svg` | SVG icon asset                           |         SVG |
 
 > Important professional note: The uploaded package contains PNG design screens and assets, not a live Figma file or `.fig` source file. For true Figma Inspect workflow, the client should provide the original Figma link with inspect/export permission. However, this project can still be completed as a professional **image-based Figma-to-code conversion** using the provided screenshots as pixel-matching references.
 
@@ -30,6 +32,7 @@ The provided project package contains visual reference screens and assets for a 
 ## Full Figma/Image to Code Conversion: Purity UI Dashboard
 
 ### Tech Stack
+
 - React.js
 - Tailwind CSS
 - React Router DOM
@@ -39,15 +42,19 @@ The provided project package contains visual reference screens and assets for a 
 - Vite
 
 ### Project Category
+
 **Frontend Dashboard Web Application**
 
 ### Project Type
+
 **Multi-page responsive frontend application**
 
 ### Difficulty
+
 ⭐⭐⭐⭐ Intermediate to Advanced
 
 ### Estimated Timeline
+
 **7–12 days** depending on required accuracy, responsiveness, animation, and client revision rounds.
 
 ---
@@ -82,9 +89,11 @@ The project should look like a real client dashboard product, not just a simple 
 # 3. Professional Client Requirement Summary
 
 ## Client Needs
+
 The client wants the provided Purity UI dashboard design converted into a working frontend web application.
 
 ## Developer Responsibilities
+
 The developer must:
 
 1. Analyze all provided design screens.
@@ -109,14 +118,17 @@ The project must include the following pages based on the provided design files.
 ## 4.1 Dashboard Page
 
 ### Route
+
 `/dashboard`
 
 ### Source Reference
+
 `Dashboard Screen.png`
 
 ### Required Sections
 
 #### Sidebar
+
 - Brand/logo area
 - Dashboard link
 - Tables link
@@ -128,6 +140,7 @@ The project must include the following pages based on the provided design files.
 - Active navigation state
 
 #### Topbar
+
 - Breadcrumb text
 - Current page title
 - Search box
@@ -136,13 +149,16 @@ The project must include the following pages based on the provided design files.
 - Notification icon
 
 #### Stats Cards
+
 Create multiple analytics cards such as:
+
 - Today’s Money
 - Today’s Users
 - New Clients
 - Total Sales
 
 Each card should include:
+
 - Title
 - Value
 - Percentage change
@@ -152,23 +168,28 @@ Each card should include:
 - Soft shadow
 
 #### Main Dashboard Cards
+
 - Welcome card
 - Chakra card / brand card
 - Satisfaction rate card
 - Referral tracking card
 
 #### Charts
+
 - Bar chart for active users
 - Area/line chart for sales overview
 
 Recommended library:
+
 - Recharts
 
 #### Tables and Activity
+
 - Projects table
 - Orders overview list
 
 ### Dashboard Acceptance Criteria
+
 - Sidebar visually matches the reference.
 - Cards are aligned properly.
 - Charts are functional and styled close to design.
@@ -180,15 +201,19 @@ Recommended library:
 ## 4.2 Tables Page
 
 ### Route
+
 `/tables`
 
 ### Source Reference
+
 `Tables Screen.png`
 
 ### Required Sections
 
 #### Authors Table
+
 The table should show:
+
 - Author avatar
 - Name
 - Email
@@ -198,7 +223,9 @@ The table should show:
 - Edit action
 
 #### Projects Table
+
 The table should show:
+
 - Project name
 - Budget
 - Status
@@ -206,6 +233,7 @@ The table should show:
 - Action button
 
 ### Required Features
+
 - Responsive table container
 - Horizontal scrolling on small screens
 - Status badges
@@ -214,6 +242,7 @@ The table should show:
 - Clean spacing and typography
 
 ### Tables Page Acceptance Criteria
+
 - Tables should match visual style.
 - Table data should be easy to read.
 - Mobile overflow should be handled professionally.
@@ -224,14 +253,17 @@ The table should show:
 ## 4.3 Billing Page
 
 ### Route
+
 `/billing`
 
 ### Source Reference
+
 `Billing Screen.png`
 
 ### Required Sections
 
 #### Payment Card Section
+
 - Credit/debit card visual
 - Card number
 - Card holder information
@@ -239,17 +271,20 @@ The table should show:
 - Dark gradient card design
 
 #### Payment Method Cards
+
 - Salary card
 - PayPal card
 - Add card button
 
 #### Invoices Section
+
 - Invoice list
 - Date
 - Amount
 - PDF action button
 
 #### Billing Information Section
+
 - Customer billing information cards
 - Name
 - Company name
@@ -258,6 +293,7 @@ The table should show:
 - Edit/delete actions
 
 #### Transactions Section
+
 - Transaction list
 - Incoming/outgoing transaction status
 - Date and time
@@ -265,6 +301,7 @@ The table should show:
 - Colored status indicators
 
 ### Billing Acceptance Criteria
+
 - Billing card must look professional.
 - Invoice and transaction lists must be responsive.
 - Cards must match spacing and border radius from design.
@@ -275,14 +312,17 @@ The table should show:
 ## 4.4 Profile Page
 
 ### Route
+
 `/profile`
 
 ### Source Reference
+
 `Profile Screen.png`
 
 ### Required Sections
 
 #### Profile Header
+
 - Large turquoise/green cover background
 - User avatar
 - User name
@@ -290,11 +330,13 @@ The table should show:
 - Navigation tabs such as Overview, Teams, Projects
 
 #### Platform Settings
+
 - Toggle options
 - Account settings
 - Application settings
 
 #### Profile Information
+
 - Full name
 - Mobile number
 - Email
@@ -302,6 +344,7 @@ The table should show:
 - Social links
 
 #### Conversations
+
 - User conversation list
 - Avatar
 - Name
@@ -309,12 +352,14 @@ The table should show:
 - Reply button
 
 #### Projects
+
 - Project cards with images
 - Project title
 - Description
 - Action button
 
 ### Profile Acceptance Criteria
+
 - Header must closely match reference layout.
 - Toggle UI must be functional.
 - Project cards should stack on mobile.
@@ -325,14 +370,17 @@ The table should show:
 ## 4.5 Sign In Page
 
 ### Route
+
 `/sign-in`
 
 ### Source Reference
+
 `Sign In Screen.png`
 
 ### Required Sections
 
 #### Left Form Area
+
 - Welcome text
 - Email input
 - Password input
@@ -341,17 +389,20 @@ The table should show:
 - Link to sign up
 
 #### Right Visual Area
+
 - Large turquoise Chakra-style visual panel
 - Logo/brand text
 - Abstract background design
 
 #### Header Navigation
+
 - Dashboard
 - Profile
 - Sign Up
 - Sign In button
 
 ### Sign In Acceptance Criteria
+
 - Form layout must match reference.
 - Input focus states must be visible.
 - Remember me toggle must work visually.
@@ -363,19 +414,23 @@ The table should show:
 ## 4.6 Sign Up Page
 
 ### Route
+
 `/sign-up`
 
 ### Source Reference
+
 `Sign Up Screen.png`
 
 ### Required Sections
 
 #### Top Hero Background
+
 - Large turquoise background area
 - Welcome heading
 - Short supporting text
 
 #### Sign Up Card
+
 - Social sign-up buttons
 - Name input
 - Email input
@@ -385,12 +440,14 @@ The table should show:
 - Link to sign in
 
 #### Header Navigation
+
 - Dashboard
 - Profile
 - Sign In
 - Sign Up button
 
 ### Sign Up Acceptance Criteria
+
 - Sign-up card must be centered correctly.
 - Inputs must include proper focus states.
 - Social buttons must have hover effects.
@@ -425,12 +482,12 @@ AuthLayout
 
 ## 5.3 Responsive Layout Rules
 
-| Screen Size | Layout Behavior |
-|---|---|
-| 320px–767px | Sidebar becomes hidden/off-canvas, content becomes single column |
-| 768px–1023px | Sidebar may collapse, cards use 2-column layout |
-| 1024px–1279px | Dashboard layout starts looking like desktop |
-| 1280px+ | Full desktop layout matching reference |
+| Screen Size   | Layout Behavior                                                  |
+| ------------- | ---------------------------------------------------------------- |
+| 320px–767px   | Sidebar becomes hidden/off-canvas, content becomes single column |
+| 768px–1023px  | Sidebar may collapse, cards use 2-column layout                  |
+| 1024px–1279px | Dashboard layout starts looking like desktop                     |
+| 1280px+       | Full desktop layout matching reference                           |
 
 ---
 
@@ -462,6 +519,7 @@ colors: {
 ## 6.2 Typography
 
 Recommended font:
+
 - Inter
 - Poppins
 - Plus Jakarta Sans
@@ -507,20 +565,21 @@ Every interactive element must include proper UI states.
 
 ## Required States
 
-| Element | Required States |
-|---|---|
-| Sidebar links | Default, hover, active |
-| Buttons | Default, hover, active, focus, disabled |
-| Inputs | Default, focus, error, disabled |
-| Table rows | Default, hover |
-| Toggle switches | On, off |
-| Cards | Default, hover if suitable |
-| Auth links | Default, hover |
-| Mobile menu | Open, close |
+| Element         | Required States                         |
+| --------------- | --------------------------------------- |
+| Sidebar links   | Default, hover, active                  |
+| Buttons         | Default, hover, active, focus, disabled |
+| Inputs          | Default, focus, error, disabled         |
+| Table rows      | Default, hover                          |
+| Toggle switches | On, off                                 |
+| Cards           | Default, hover if suitable              |
+| Auth links      | Default, hover                          |
+| Mobile menu     | Open, close                             |
 
 ## Examples
 
 ### Button States
+
 - Default: primary turquoise background
 - Hover: slightly darker turquoise
 - Active: subtle scale down
@@ -528,6 +587,7 @@ Every interactive element must include proper UI states.
 - Disabled: reduced opacity
 
 ### Sidebar Active State
+
 - White background
 - Soft shadow
 - Icon highlighted
@@ -558,6 +618,7 @@ Required routes:
 Use Recharts for dashboard charts.
 
 Required chart components:
+
 - Bar chart
 - Line chart or area chart
 
@@ -566,6 +627,7 @@ Charts should be placed inside card components and styled to match the dashboard
 ## 8.3 Forms
 
 Authentication forms should include:
+
 - Email field
 - Password field
 - Name field on sign up
@@ -576,9 +638,11 @@ Authentication forms should include:
 ## 8.4 Responsive Sidebar
 
 Desktop:
+
 - Sidebar fixed or sticky on the left.
 
 Mobile:
+
 - Sidebar hidden by default.
 - Menu button opens drawer/sidebar.
 - Overlay closes menu when clicked.
@@ -727,40 +791,37 @@ npm install react-router-dom recharts framer-motion lucide-react clsx tailwind-m
 ```js
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: '#4FD1C5',
-        primaryDark: '#38B2AC',
-        dark: '#2D3748',
-        navy: '#1A202C',
-        muted: '#718096',
-        lightText: '#A0AEC0',
-        pageBg: '#F8F9FA',
-        border: '#E2E8F0',
-        success: '#48BB78',
-        danger: '#E53E3E',
-        warning: '#ECC94B',
+        primary: "#4FD1C5",
+        primaryDark: "#38B2AC",
+        dark: "#2D3748",
+        navy: "#1A202C",
+        muted: "#718096",
+        lightText: "#A0AEC0",
+        pageBg: "#F8F9FA",
+        border: "#E2E8F0",
+        success: "#48BB78",
+        danger: "#E53E3E",
+        warning: "#ECC94B",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
       },
       borderRadius: {
-        card: '20px',
-        button: '12px',
+        card: "20px",
+        button: "12px",
       },
       boxShadow: {
-        card: '0 7px 23px rgba(0, 0, 0, 0.05)',
-        soft: '0 4px 12px rgba(0, 0, 0, 0.04)',
+        card: "0 7px 23px rgba(0, 0, 0, 0.05)",
+        soft: "0 4px 12px rgba(0, 0, 0, 0.04)",
       },
     },
   },
   plugins: [],
-}
+};
 ```
 
 ---
@@ -778,9 +839,9 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #F8F9FA;
-  color: #2D3748;
+  font-family: "Inter", sans-serif;
+  background: #f8f9fa;
+  color: #2d3748;
 }
 
 img {
@@ -802,7 +863,7 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E0;
+  background: #cbd5e0;
   border-radius: 999px;
 }
 ```
@@ -814,7 +875,7 @@ select {
 ## 13.1 Card Component
 
 ```jsx
-const Card = ({ children, className = '' }) => {
+const Card = ({ children, className = "" }) => {
   return (
     <div className={`rounded-card bg-white p-6 shadow-card ${className}`}>
       {children}
@@ -828,14 +889,20 @@ export default Card;
 ## 13.2 Button Component
 
 ```jsx
-const Button = ({ children, variant = 'primary', className = '', ...props }) => {
-  const base = 'inline-flex items-center justify-center rounded-button px-5 py-3 text-sm font-bold transition focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50';
+const Button = ({
+  children,
+  variant = "primary",
+  className = "",
+  ...props
+}) => {
+  const base =
+    "inline-flex items-center justify-center rounded-button px-5 py-3 text-sm font-bold transition focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50";
 
   const variants = {
-    primary: 'bg-primary text-white hover:bg-primaryDark active:scale-[0.98]',
-    dark: 'bg-dark text-white hover:bg-navy active:scale-[0.98]',
-    ghost: 'bg-transparent text-muted hover:bg-gray-100 hover:text-dark',
-    outline: 'border border-border bg-white text-dark hover:bg-gray-50',
+    primary: "bg-primary text-white hover:bg-primaryDark active:scale-[0.98]",
+    dark: "bg-dark text-white hover:bg-navy active:scale-[0.98]",
+    ghost: "bg-transparent text-muted hover:bg-gray-100 hover:text-dark",
+    outline: "border border-border bg-white text-dark hover:bg-gray-50",
   };
 
   return (
@@ -851,7 +918,7 @@ export default Button;
 ## 13.3 Sidebar Link Component
 
 ```jsx
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const SidebarLink = ({ to, icon: Icon, label }) => {
   return (
@@ -860,8 +927,8 @@ const SidebarLink = ({ to, icon: Icon, label }) => {
       className={({ isActive }) =>
         `flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-bold transition ${
           isActive
-            ? 'bg-white text-dark shadow-soft'
-            : 'text-muted hover:bg-white/70 hover:text-dark'
+            ? "bg-white text-dark shadow-soft"
+            : "text-muted hover:bg-white/70 hover:text-dark"
         }`
       }
     >
@@ -892,50 +959,50 @@ import {
   User,
   LogIn,
   UserPlus,
-} from 'lucide-react';
+} from "lucide-react";
 
 export const navLinks = [
-  { label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
-  { label: 'Tables', path: '/tables', icon: Table },
-  { label: 'Billing', path: '/billing', icon: CreditCard },
-  { label: 'Profile', path: '/profile', icon: User },
-  { label: 'Sign In', path: '/sign-in', icon: LogIn },
-  { label: 'Sign Up', path: '/sign-up', icon: UserPlus },
+  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Tables", path: "/tables", icon: Table },
+  { label: "Billing", path: "/billing", icon: CreditCard },
+  { label: "Profile", path: "/profile", icon: User },
+  { label: "Sign In", path: "/sign-in", icon: LogIn },
+  { label: "Sign Up", path: "/sign-up", icon: UserPlus },
 ];
 ```
 
 ## Example: `src/data/stats.js`
 
 ```js
-import { Wallet, Users, UserPlus, ShoppingCart } from 'lucide-react';
+import { Wallet, Users, UserPlus, ShoppingCart } from "lucide-react";
 
 export const stats = [
   {
     title: "Today's Money",
-    value: '$53,000',
-    change: '+55%',
-    trend: 'up',
+    value: "$53,000",
+    change: "+55%",
+    trend: "up",
     icon: Wallet,
   },
   {
     title: "Today's Users",
-    value: '2,300',
-    change: '+5%',
-    trend: 'up',
+    value: "2,300",
+    change: "+5%",
+    trend: "up",
     icon: Users,
   },
   {
-    title: 'New Clients',
-    value: '+3,052',
-    change: '-14%',
-    trend: 'down',
+    title: "New Clients",
+    value: "+3,052",
+    change: "-14%",
+    trend: "down",
     icon: UserPlus,
   },
   {
-    title: 'Total Sales',
-    value: '$173,000',
-    change: '+8%',
-    trend: 'up',
+    title: "Total Sales",
+    value: "$173,000",
+    change: "+8%",
+    trend: "up",
     icon: ShoppingCart,
   },
 ];
@@ -968,6 +1035,7 @@ text-document-icon.svg
 ## Step 2: Build Layouts
 
 Create:
+
 - `DashboardLayout.jsx`
 - `AuthLayout.jsx`
 - `Sidebar.jsx`
@@ -977,6 +1045,7 @@ Create:
 ## Step 3: Build Common Components
 
 Create:
+
 - Button
 - Card
 - Input
@@ -990,6 +1059,7 @@ Create:
 ## Step 4: Build Dashboard Page
 
 Create:
+
 - Stats grid
 - Welcome card
 - Brand card
@@ -1003,6 +1073,7 @@ Create:
 ## Step 5: Build Tables Page
 
 Create:
+
 - Authors table
 - Projects table
 - Status badge
@@ -1011,6 +1082,7 @@ Create:
 ## Step 6: Build Billing Page
 
 Create:
+
 - Credit card component
 - Payment method cards
 - Invoices list
@@ -1020,6 +1092,7 @@ Create:
 ## Step 7: Build Profile Page
 
 Create:
+
 - Profile header
 - Platform settings toggles
 - Profile info card
@@ -1029,6 +1102,7 @@ Create:
 ## Step 8: Build Authentication Pages
 
 Create:
+
 - Sign in form
 - Sign up form
 - Auth navbar
@@ -1065,6 +1139,7 @@ Create:
 # 16. Responsive Design Details
 
 ## Dashboard Desktop
+
 - Sidebar fixed width around 250px.
 - Main content uses remaining width.
 - Stats cards use 4-column grid.
@@ -1072,11 +1147,13 @@ Create:
 - Tables span full width.
 
 ## Dashboard Tablet
+
 - Sidebar may collapse.
 - Stats cards use 2-column grid.
 - Charts stack or use 2-column layout.
 
 ## Dashboard Mobile
+
 - Sidebar becomes drawer.
 - Stats cards become 1-column.
 - Charts become full width.
@@ -1124,6 +1201,7 @@ npm run preview
 # 19. Testing Checklist
 
 ## Visual Testing
+
 - Dashboard page matches reference.
 - Tables page matches reference.
 - Billing page matches reference.
@@ -1136,6 +1214,7 @@ npm run preview
 - Shadows and border radius look correct.
 
 ## Functional Testing
+
 - Sidebar navigation works.
 - Active link updates correctly.
 - Mobile sidebar opens and closes.
@@ -1146,6 +1225,7 @@ npm run preview
 - Buttons have hover and active states.
 
 ## Responsive Testing
+
 - 320px mobile
 - 375px mobile
 - 425px mobile
@@ -1156,6 +1236,7 @@ npm run preview
 - 1920px large screen
 
 ## Browser Testing
+
 - Chrome
 - Edge
 - Firefox
@@ -1180,6 +1261,7 @@ The final delivery must include:
 - Short project documentation
 
 Optional deliverables:
+
 - Loom walkthrough video
 - Component documentation
 - Future maintenance guide
@@ -1191,13 +1273,15 @@ Optional deliverables:
 
 The final project README should include:
 
-```md
+````md
 # Purity UI Dashboard - React Tailwind Conversion
 
 ## Overview
+
 This project is a pixel-perfect conversion of a dashboard UI design into a responsive React + Tailwind CSS frontend application.
 
 ## Tech Stack
+
 - React.js
 - Tailwind CSS
 - Vite
@@ -1207,6 +1291,7 @@ This project is a pixel-perfect conversion of a dashboard UI design into a respo
 - Lucide React
 
 ## Pages
+
 - Dashboard
 - Tables
 - Billing
@@ -1215,6 +1300,7 @@ This project is a pixel-perfect conversion of a dashboard UI design into a respo
 - Sign Up
 
 ## Features
+
 - Responsive dashboard layout
 - Sidebar navigation
 - Dashboard cards
@@ -1227,28 +1313,35 @@ This project is a pixel-perfect conversion of a dashboard UI design into a respo
 - Clean component structure
 
 ## Installation
+
 ```bash
 npm install
 ```
+````
 
 ## Run Locally
+
 ```bash
 npm run dev
 ```
 
 ## Build
+
 ```bash
 npm run build
 ```
 
 ## Preview Production Build
+
 ```bash
 npm run preview
 ```
 
 ## Deployment
+
 This project can be deployed on Vercel or Netlify.
-```
+
+````
 
 ---
 
@@ -1548,7 +1641,7 @@ Testing requirements:
 - Test forms
 - Test charts
 - Test production build using npm run build
-```
+````
 
 ---
 
@@ -1615,4 +1708,3 @@ The Purity UI Dashboard conversion is especially useful because it includes mult
 - Reusable components
 
 The final result should prove that the developer can convert a complex design into a professional React + Tailwind application with accuracy, responsiveness, maintainability, and client-ready quality.
-
