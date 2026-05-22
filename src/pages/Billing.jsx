@@ -1,3 +1,4 @@
+import { Landmark, Wallet } from "lucide-react";
 import CreditCardWidget from "../components/billing/CreditCardWidget";
 import PaymentMethods from "../components/billing/PaymentMethods";
 import InvoicesList from "../components/billing/InvoicesList";
@@ -11,19 +12,35 @@ export default function Billing() {
       <div className="lg:col-span-8 flex flex-col gap-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           <CreditCardWidget />
-          {/* We can duplicate card details or render a promo, but let's just make credit card span or stack. Let's make credit card stack with a promo card or just show it single. Wait, in Figma it has a balance indicator card on the right, or we can just render the CreditCardWidget and wrap it nicely! */}
-          <div className="bg-white rounded-card shadow-card p-6 flex flex-col justify-between">
-            <div>
-              <span className="text-[10px] font-bold text-lightText uppercase tracking-wider block">
-                Total Balance
-              </span>
-              <span className="text-2xl font-bold text-dark block mt-1">
-                $45,231.89
-              </span>
+          <div className="grid grid-cols-2 gap-6">
+            {/* Salary Card */}
+            <div className="bg-white rounded-card shadow-card p-6 flex flex-col items-center text-center justify-between">
+              <div className="w-12 h-12 bg-primary flex items-center justify-center text-white rounded-2xl shadow-sm shadow-primary/20">
+                <Landmark size={20} />
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-bold text-dark">Salary</h4>
+                <p className="text-[10px] text-lightText font-semibold mt-1">
+                  Belong Interactive
+                </p>
+              </div>
+              <hr className="w-full border-gray-100 my-3" />
+              <span className="text-sm font-extrabold text-dark">+$2,000</span>
             </div>
-            <div className="text-[10px] text-lightText font-semibold mt-4">
-              <span className="text-success font-bold">+12%</span> since last
-              month
+
+            {/* PayPal Card */}
+            <div className="bg-white rounded-card shadow-card p-6 flex flex-col items-center text-center justify-between">
+              <div className="w-12 h-12 bg-primary flex items-center justify-center text-white rounded-2xl shadow-sm shadow-primary/20">
+                <Wallet size={20} />
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-bold text-dark">PayPal</h4>
+                <p className="text-[10px] text-lightText font-semibold mt-1">
+                  Freelance Payment
+                </p>
+              </div>
+              <hr className="w-full border-gray-100 my-3" />
+              <span className="text-sm font-extrabold text-dark">+$4,900</span>
             </div>
           </div>
         </div>

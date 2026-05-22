@@ -32,7 +32,7 @@ export default function CreditCardWidget() {
       {/* Card Number */}
       <div className="z-10 my-4">
         <span className="text-lg font-bold tracking-[0.2em] font-mono block">
-          7812 •••• •••• 7916
+          7812 2139 0823 7916
         </span>
       </div>
 
