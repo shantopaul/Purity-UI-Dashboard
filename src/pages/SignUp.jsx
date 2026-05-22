@@ -16,12 +16,12 @@ export default function SignUp() {
   return (
     <div className="relative w-full min-h-[750px] flex flex-col items-center justify-center p-4">
       {/* Background Banner */}
-      <div
-        style={{ backgroundImage: `url(${backgroundImg})` }}
-        className="absolute top-4 left-4 right-4 h-[380px] bg-cover bg-center rounded-[30px] z-0 overflow-hidden"
-      >
-        {/* Subtle gradient overlay to match Figma */}
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-400/90 to-teal-600/90 mix-blend-multiply" />
+      <div className="absolute top-4 left-4 right-4 h-[380px] bg-gradient-to-br from-[#319795] to-[#4FD1C5] rounded-[30px] z-0 overflow-hidden">
+        {/* Wavy lines with screen blend mode */}
+        <div
+          style={{ backgroundImage: `url(${backgroundImg})` }}
+          className="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-50 z-0"
+        />
 
         {/* Welcome Title and Subtext */}
         <div className="absolute inset-0 flex flex-col items-center justify-start pt-20 px-6 text-center text-white select-none">

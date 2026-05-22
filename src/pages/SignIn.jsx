@@ -105,12 +105,12 @@ export default function SignIn() {
       </div>
 
       {/* Right panel Visual cover */}
-      <div
-        style={{ backgroundImage: `url(${backgroundImg})` }}
-        className="absolute right-0 top-0 bottom-0 w-[50vw] hidden lg:flex flex-col justify-center items-center text-white p-12 select-none bg-cover bg-center rounded-bl-[120px] overflow-hidden"
-      >
-        {/* Subtle gradient overlay to match Figma */}
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-400/90 to-teal-600/90 mix-blend-multiply z-0" />
+      <div className="absolute right-0 top-0 bottom-0 w-[50vw] hidden lg:flex flex-col justify-center items-center text-white p-12 select-none bg-gradient-to-br from-[#319795] to-[#4FD1C5] rounded-bl-[120px] overflow-hidden">
+        {/* Wavy lines with screen blend mode */}
+        <div
+          style={{ backgroundImage: `url(${backgroundImg})` }}
+          className="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-50 z-0"
+        />
 
         {/* Center Logo branding */}
         <div className="flex items-center gap-4.5 z-10 select-none">
