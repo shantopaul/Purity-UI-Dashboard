@@ -103,55 +103,55 @@ git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI D
 
 ### 3.3 Commit Message Standards & Professional Writing Guide
 
-To maintain a clean, readable, and professional project history (crucial for client deliverables, startup products, and enterprise applications), all Git commits must follow the **Conventional Commits** specification.
+All Git commit messages must follow the clean, professional, capitalized imperative style shown in the repository history.
 
-#### 3.3.1 Commit Header Structure
+#### 3.3.1 Commit Subject Rules
 
-Every commit message header must have a structural format consisting of a **type**, a **scope**, and a **subject**:
-
-```txt
-<type>(<scope>): <subject>
-```
-
-- **Type:** Indicates the intent of the commit. Must be one of the following:
-  - `feat`: A new layout, component, route, or business logic.
-  - `fix`: A correction for a visual alignment issue, responsive bug, logic error, or broken style.
-  - `docs`: Documentation changes only (e.g. updating planning files, instructions, or README).
-  - `style`: Code style improvements that do not affect code logic (formatting, spacing, semi-colons).
-  - `refactor`: Code changes that neither fix a bug nor add a feature (e.g., simplifying a component structure).
-  - `perf`: A code change that improves rendering speed, decreases resource usage, or optimizes asset loading.
-  - `chore`: Updates to build scripts, configurations, package.json dependencies, or repository tooling.
-- **Scope:** Specifies the context or component targeted by the change. Examples include: `setup`, `layout`, `sidebar`, `billing`, `profile`, `auth`, `chart`, `gitignore`. Keep scopes lowercase and brief.
-- **Subject:** A concise description of the changes:
-  - Use the **imperative mood** (e.g., "add input styles" instead of "added input styles" or "adds input styles").
-  - Do not capitalize the first letter of the subject.
-  - Do not end the subject with a period.
+1.  **Start with a Capitalized Imperative Verb:** Begin the commit message with a capitalized verb in the imperative mood (e.g., `Add`, `Configure`, `Format`, `Update`, `Exclude`, `Merge`, `Reorder`, `Initialize`).
+2.  **No Type or Scope Prefixes:** Do not use Conventional Commit prefixes like `feat(scope):`, `fix:`, `chore:`, or `style:`.
+3.  **Plain English Description:** Write a clear, descriptive sentence outlining the action taken.
+4.  **No Ending Period:** Do not end the commit header with a period.
+5.  **Keep it Concise:** Keep the main header under 72 characters.
 
 #### 3.3.2 Standardized Commit Examples
 
-- **Good Examples (Imperative, Clear, Structured):**
-  - `feat(setup): configure tailwind design tokens and custom border radius`
-  - `fix(sidebar): align navigation text on mobile viewports`
-  - `style(gitignore): add environment variables to ignore filters`
-  - `docs(plan): update feature tracking status for milestone F01`
+- **Good Examples (Capitalized Imperative, Plain English):**
+  - `Initialize project structure and planning baseline`
+  - `Configure tailwind and project design tokens`
+  - `Exclude environment configuration files in gitignore`
+  - `Add commit writing and signing guidelines to instructions`
+  - `Add vercel.json for SPA routing configuration`
+  - `Merge branch 'feature/layout-navigation'`
 - **Bad Examples (To Be Avoided):**
-  - `fixed padding` (Missing type, scope, and uses past tense)
-  - `feat: Done with F01!` (Missing scope, informal tone, contains exclamation mark)
-  - `refactor(auth) Form looks better now.` (Subject starts with capital letter, ends with a period, uses subjective quality language)
+  - `feat(setup): configure tailwind` (Uses conventional commit prefixes)
+  - `added digital card flip` (Uses lowercase and past tense)
+  - `Update card layout.` (Ends with a period)
 
-#### 3.3.3 Multi-Line Commits (For Large Feature Merges)
+#### 3.3.3 Multi-Line Commit Details
 
-For complex changes, provide a body and footer separated by blank lines:
+For large or complex changes, separate the header from a bulleted body list with a blank line:
 
 ```txt
-feat(billing): implement interactive credit card display
+Implement interactive credit card display
 
-- add gradient-based digital debit card container
-- implement flip transition using framer-motion on click
-- integrate raw input validation for expiration date and cvc
-
-closes #24
+- Add gradient-based digital debit card container
+- Implement flip transition using framer-motion on click
+- Integrate raw input validation for expiration date and cvc
 ```
+
+---
+
+### 3.4 GitHub Pull Request & Merging Standards
+
+When opening a Pull Request (PR) on GitHub:
+
+#### 3.4.1 Pull Request Details
+
+1.  **Add a Title:** Provide a clean, descriptive title in the capitalized imperative style (e.g., `Implement layout architecture and navigation routing`).
+2.  **Add a Description:** Provide a concise bulleted list outlining the major changes introduced by the PR.
+3.  **Do Not Always Manually Merge on GitHub:**
+    - Do not immediately merge branch PRs on GitHub unless the local checks pass successfully.
+    - For serial milestone feature development, keep branches intact and verify that the target base branch is aligned before final merge, to prevent commit graph conflicts.
 
 ---
 
