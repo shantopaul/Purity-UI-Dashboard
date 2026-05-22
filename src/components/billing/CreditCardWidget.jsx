@@ -4,7 +4,7 @@ export default function CreditCardWidget() {
   return (
     <div
       style={{ backgroundImage: `url(${backgroundImg})` }}
-      className="bg-cover bg-center rounded-card shadow-card p-6 text-white flex flex-col justify-between min-h-[200px] relative overflow-hidden transition-all duration-300 hover:shadow-lg"
+      className="bg-cover bg-center rounded-card shadow-card p-6 text-white flex flex-col justify-between h-[220px] md:h-full relative overflow-hidden transition-all duration-300 hover:shadow-lg"
     >
       {/* Premium background container */}
 

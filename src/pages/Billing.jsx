@@ -10,11 +10,11 @@ export default function Billing() {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
       {/* Left Column */}
       <div className="lg:col-span-8 flex flex-col gap-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch h-auto md:h-[220px]">
           <CreditCardWidget />
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-6 h-full">
             {/* Salary Card */}
-            <div className="bg-white rounded-card shadow-card p-6 flex flex-col items-center text-center justify-between min-h-[190px]">
+            <div className="bg-white rounded-card shadow-card p-6 flex flex-col items-center text-center justify-between h-[220px] md:h-full">
               <div className="w-12 h-12 bg-primary flex items-center justify-center text-white rounded-2xl shadow-sm shadow-primary/20">
                 <Wallet size={20} />
               </div>
@@ -30,7 +30,7 @@ export default function Billing() {
             </div>
 
             {/* PayPal Card */}
-            <div className="bg-white rounded-card shadow-card p-6 flex flex-col items-center text-center justify-between min-h-[190px]">
+            <div className="bg-white rounded-card shadow-card p-6 flex flex-col items-center text-center justify-between h-[220px] md:h-full">
               <div className="w-12 h-12 bg-primary flex items-center justify-center text-white rounded-2xl shadow-sm shadow-primary/20">
                 <svg
                   className="w-5 h-5 text-white"
