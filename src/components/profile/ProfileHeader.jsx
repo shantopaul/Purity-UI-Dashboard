@@ -12,9 +12,9 @@ export default function ProfileHeader() {
   ];
 
   return (
-    <div className="relative -mx-6 -mt-24 mb-6">
+    <div className="relative -mt-24 mb-6">
       {/* Background Banner */}
-      <div className="w-full h-[180px] relative bg-gradient-to-r from-[#319795] to-[#4FD1C5] rounded-none overflow-hidden shadow-sm">
+      <div className="w-full h-[280px] relative bg-gradient-to-r from-[#319795] to-[#4FD1C5] rounded-[24px] overflow-hidden shadow-sm">
         <div
           style={{ backgroundImage: `url(${backgroundImg})` }}
           className="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-60"
@@ -57,7 +57,7 @@ export default function ProfileHeader() {
               <button
                 key={tab.name}
                 onClick={() => setActiveTab(tab.name)}
-                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-[10px] font-bold transition-all uppercase ${
+                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold transition-all uppercase ${
                   isActive
                     ? "bg-white text-dark shadow-sm"
                     : "text-lightText hover:text-dark"
