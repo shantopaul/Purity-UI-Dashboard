@@ -1,10 +1,22 @@
+import ProfileHeader from "../components/profile/ProfileHeader";
+import PlatformSettings from "../components/profile/PlatformSettings";
+import ProfileInfo from "../components/profile/ProfileInfo";
+import ProfileProjects from "../components/profile/ProfileProjects";
+
 export default function Profile() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6">
-      <h2 className="text-xl font-bold text-dark mb-2">Profile Page</h2>
-      <p className="text-muted text-sm">
-        Welcome to the Purity UI Profile page.
-      </p>
+    <div className="flex flex-col gap-6">
+      {/* Banner & Header overlap */}
+      <ProfileHeader />
+
+      {/* Settings & Info Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6">
+        <PlatformSettings />
+        <ProfileInfo />
+      </div>
+
+      {/* Projects Grid */}
+      <ProfileProjects />
     </div>
   );
 }
