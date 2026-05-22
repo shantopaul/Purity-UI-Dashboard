@@ -2,12 +2,12 @@ import { useState } from "react";
 
 export default function PlatformSettings() {
   const [settings, setSettings] = useState({
-    answers: true,
-    mentions: false,
     follows: true,
+    answers: false,
+    mentions: true,
     launches: false,
-    updates: true,
-    newsletter: false,
+    updates: false,
+    newsletter: true,
   });
 
   const toggleSetting = (key) => {
@@ -29,12 +29,12 @@ export default function PlatformSettings() {
 
           <div className="flex flex-col gap-3.5">
             {[
+              { key: "follows", label: "Email me when someone follows me" },
               {
                 key: "answers",
                 label: "Email me when someone answers on my post",
               },
               { key: "mentions", label: "Email me when someone mentions me" },
-              { key: "follows", label: "Email me when someone follows me" },
             ].map((item) => (
               <label
                 key={item.key}

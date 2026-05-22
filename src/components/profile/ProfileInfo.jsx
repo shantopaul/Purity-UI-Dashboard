@@ -2,9 +2,9 @@ import { Edit2 } from "lucide-react";
 
 export default function ProfileInfo() {
   const profileDetails = [
-    { label: "Full Name", value: "Esthera Jackson" },
+    { label: "Full Name", value: "Alec M. Thompson" },
     { label: "Mobile", value: "(44) 123 1234 123" },
-    { label: "Email", value: "esthera@simmmple.com" },
+    { label: "Email", value: "alecthompson@mail.com" },
     { label: "Location", value: "United States" },
   ];
 
@@ -21,7 +21,7 @@ export default function ProfileInfo() {
       {/* Bio Description */}
       <div>
         <p className="text-xs text-lightText font-medium leading-relaxed">
-          Hi, I’m Esthera Jackson, Decisions: If you can’t decide, the answer is
+          Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is
           no. If two equally difficult paths, choose the one more painful in the
           short term (pain avoidance is creating an illusion of equality).
         </p>

@@ -1,6 +1,7 @@
 import ProfileHeader from "../components/profile/ProfileHeader";
 import PlatformSettings from "../components/profile/PlatformSettings";
 import ProfileInfo from "../components/profile/ProfileInfo";
+import ConversationsList from "../components/profile/ConversationsList";
 import ProfileProjects from "../components/profile/ProfileProjects";
 
 export default function Profile() {
@@ -10,9 +11,10 @@ export default function Profile() {
       <ProfileHeader />
 
       {/* Settings & Info Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
         <PlatformSettings />
         <ProfileInfo />
+        <ConversationsList />
       </div>
 
       {/* Projects Grid */}
