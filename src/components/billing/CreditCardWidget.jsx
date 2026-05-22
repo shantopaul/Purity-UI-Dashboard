@@ -6,8 +6,7 @@ export default function CreditCardWidget() {
       style={{ backgroundImage: `url(${backgroundImg})` }}
       className="bg-cover bg-center rounded-card shadow-card p-6 text-white flex flex-col justify-between min-h-[200px] relative overflow-hidden transition-all duration-300 hover:shadow-lg"
     >
-      {/* Translucent premium glass overlay */}
-      <div className="absolute inset-0 bg-black/35 backdrop-blur-[2px] z-0" />
+      {/* Premium background container */}
 
       {/* Header (Wifi icon & Brand initials) */}
       <div className="z-10 flex justify-between items-start">
