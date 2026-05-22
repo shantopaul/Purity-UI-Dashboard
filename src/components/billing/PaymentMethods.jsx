@@ -1,4 +1,4 @@
-import { Edit2, Plus } from "lucide-react";
+import { Edit2 } from "lucide-react";
 
 export default function PaymentMethods() {
   return (
@@ -6,9 +6,8 @@ export default function PaymentMethods() {
       {/* Header */}
       <div className="flex justify-between items-center">
         <h3 className="text-sm font-bold text-dark">Payment Method</h3>
-        <button className="inline-flex items-center gap-1 bg-primary hover:bg-primary/95 text-white font-bold text-[10px] px-3.5 py-2 rounded-xl shadow-sm transition-colors">
-          <Plus size={11} strokeWidth={3} />
-          <span>Add New Card</span>
+        <button className="bg-[#1A202C] hover:bg-[#2D3748] text-white font-extrabold text-[9px] px-4 py-2.5 rounded-xl transition-colors tracking-wider uppercase">
+          Add a New Card
         </button>
       </div>
 
@@ -25,7 +24,7 @@ export default function PaymentMethods() {
               </div>
             </div>
             <span className="text-xs font-mono font-bold text-dark">
-              •••• •••• •••• 7852
+              7812 2139 0823 XXXX
             </span>
           </div>
           <button className="p-1.5 text-lightText hover:text-dark hover:bg-gray-50 rounded-lg transition-all">
@@ -41,7 +40,7 @@ export default function PaymentMethods() {
               VISA
             </div>
             <span className="text-xs font-mono font-bold text-dark">
-              •••• •••• •••• 1259
+              7812 2139 0823 XXXX
             </span>
           </div>
           <button className="p-1.5 text-lightText hover:text-dark hover:bg-gray-50 rounded-lg transition-all">

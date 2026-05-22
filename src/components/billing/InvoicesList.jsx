@@ -2,10 +2,10 @@ import { FileDown } from "lucide-react";
 
 const invoices = [
   { date: "March, 01, 2020", code: "#MS-415646", amount: "$180" },
-  { date: "February, 10, 2020", code: "#RV-126749", amount: "$250" },
-  { date: "January, 05, 2020", code: "#FB-212562", amount: "$560" },
-  { date: "December, 18, 2019", code: "#QW-103578", amount: "$120" },
-  { date: "November, 22, 2019", code: "#AR-958342", amount: "$200" },
+  { date: "February, 10, 2021", code: "#RV-126749", amount: "$250" },
+  { date: "April, 05, 2020", code: "#FB-212562", amount: "$560" },
+  { date: "June, 25, 2019", code: "#QW-103578", amount: "$120" },
+  { date: "March, 01, 2019", code: "#AR-803481", amount: "$300" },
 ];
 
 export default function InvoicesList() {
