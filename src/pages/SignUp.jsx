@@ -16,7 +16,7 @@ export default function SignUp() {
   return (
     <div className="relative w-full min-h-[750px] flex flex-col items-center justify-center p-4">
       {/* Background Banner */}
-      <div className="absolute top-4 left-4 right-4 h-[380px] bg-gradient-to-br from-[#319795] to-[#4FD1C5] rounded-[30px] z-0 overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-[380px] bg-gradient-to-br from-[#319795] to-[#4FD1C5] rounded-b-[30px] z-0 overflow-hidden">
         {/* Wavy lines with screen blend mode */}
         <div
           style={{ backgroundImage: `url(${backgroundImg})` }}
