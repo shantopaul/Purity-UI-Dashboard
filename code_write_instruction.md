@@ -18,28 +18,32 @@ Before writing any code or modifying existing workspace files, you must follow t
 ## 2. Production-Grade Quality Standards
 
 ### 2.1 Styling & Theme System
-*   **Tailwind Exclusively:** Use Tailwind CSS for all layout and styling. Do not use ad-hoc CSS modules or inline styling objects unless dynamic calculation (e.g. dynamic width percentages) is required.
-*   **Theme Tokens:** Use the custom design tokens (e.g., `text-primary`, `rounded-card`, `shadow-soft`) to maintain visual alignment.
+
+- **Tailwind Exclusively:** Use Tailwind CSS for all layout and styling. Do not use ad-hoc CSS modules or inline styling objects unless dynamic calculation (e.g. dynamic width percentages) is required.
+- **Theme Tokens:** Use the custom design tokens (e.g., `text-primary`, `rounded-card`, `shadow-soft`) to maintain visual alignment.
 
 ### 2.2 Component Reusability & Clean Code
-*   Keep components small and focused. If a file exceeds 150 lines, evaluate if it can be broken down into sub-components.
-*   Document props using descriptive comments or JSDoc.
-*   Preserve all existing codebase comments, helper utilities, and layout structures unless they are explicitly targeted by the feature requirements.
+
+- Keep components small and focused. If a file exceeds 150 lines, evaluate if it can be broken down into sub-components.
+- Document props using descriptive comments or JSDoc.
+- Preserve all existing codebase comments, helper utilities, and layout structures unless they are explicitly targeted by the feature requirements.
 
 ### 2.3 Accessibility (A11y) Rules
-*   Every interactive component (e.g., buttons, anchors) must have focus rings: `focus:ring-2 focus:ring-primary focus:outline-none`.
-*   All images and avatars must include descriptive `alt` tags.
-*   Use semantic tags instead of generic `div`s for layout grids.
+
+- Every interactive component (e.g., buttons, anchors) must have focus rings: `focus:ring-2 focus:ring-primary focus:outline-none`.
+- All images and avatars must include descriptive `alt` tags.
+- Use semantic tags instead of generic `div`s for layout grids.
 
 ### 2.4 Responsive Layout Execution
-*   Design mobile-first. Implement grid styles starting with mobile layouts and scaling up for larger screens:
-    ```javascript
-    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-    ```
-*   Wrap all table views in an overflow-x wrapper:
-    ```javascript
-    className="w-full overflow-x-auto scrollbar-thin"
-    ```
+
+- Design mobile-first. Implement grid styles starting with mobile layouts and scaling up for larger screens:
+  ```javascript
+  className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6";
+  ```
+- Wrap all table views in an overflow-x wrapper:
+  ```javascript
+  className = "w-full overflow-x-auto scrollbar-thin";
+  ```
 
 ---
 
@@ -48,6 +52,7 @@ Before writing any code or modifying existing workspace files, you must follow t
 To ensure security and code integrity, you must sign your commits.
 
 ### 3.1 GPG Key Configuration
+
 Before starting development, verify your GPG key configuration:
 
 1.  **Check for existing keys:**
@@ -55,13 +60,16 @@ Before starting development, verify your GPG key configuration:
     gpg --list-secret-keys --keyid-format=LONG
     ```
 2.  **Generate a new key if none exist:**
+
     ```bash
     gpg --full-generate-key
     ```
-    *   *Algorithm:* RSA and RSA (default)
-    *   *Key size:* 4096 bits
-    *   *Validity:* 0 (does not expire)
-    *   *Details:* Use the name and verified email address associated with your GitHub profile.
+
+    - _Algorithm:_ RSA and RSA (default)
+    - _Key size:_ 4096 bits
+    - _Validity:_ 0 (does not expire)
+    - _Details:_ Use the name and verified email address associated with your GitHub profile.
+
 3.  **Get the GPG Key ID:**
     Identify the long key ID string after `sec rsa4096/` (e.g., `3AA5C34371567BD2`).
 4.  **Configure Git to sign commits:**
@@ -71,6 +79,7 @@ Before starting development, verify your GPG key configuration:
     ```
 
 ### 3.2 Safe Windows Git Execution
+
 On Windows systems, you may encounter directory ownership constraints. Always execute Git commands using the `safe.directory` override flag:
 
 ```bash
@@ -78,25 +87,28 @@ git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI D
 ```
 
 **Common Command Overrides:**
-*   *Add Changes:*
-    ```bash
-    git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI Dashboard ( Freelancer Project )/Purity-UI-Dashboard-Figma-To-React" add .
-    ```
-*   *Commit Changes:*
-    ```bash
-    git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI Dashboard ( Freelancer Project )/Purity-UI-Dashboard-Figma-To-React" commit -m "feat(auth): add sign-in form validation"
-    ```
-*   *Push Changes:*
-    ```bash
-    git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI Dashboard ( Freelancer Project )/Purity-UI-Dashboard-Figma-To-React" push origin feature/auth-forms
-    ```
+
+- _Add Changes:_
+  ```bash
+  git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI Dashboard ( Freelancer Project )/Purity-UI-Dashboard-Figma-To-React" add .
+  ```
+- _Commit Changes:_
+  ```bash
+  git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI Dashboard ( Freelancer Project )/Purity-UI-Dashboard-Figma-To-React" commit -m "feat(auth): add sign-in form validation"
+  ```
+- _Push Changes:_
+  ```bash
+  git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI Dashboard ( Freelancer Project )/Purity-UI-Dashboard-Figma-To-React" push origin feature/auth-forms
+  ```
 
 ### 3.3 Commit Message Standards
+
 Use the Conventional Commits specification:
-*   `feat(<scope>): ...` — New layout or component additions.
-*   `fix(<scope>): ...` — Visual alignment or responsive behavior corrections.
-*   `docs(<scope>): ...` — Updates to planning or project files.
-*   `style(<scope>): ...` — Code formatting updates.
+
+- `feat(<scope>): ...` — New layout or component additions.
+- `fix(<scope>): ...` — Visual alignment or responsive behavior corrections.
+- `docs(<scope>): ...` — Updates to planning or project files.
+- `style(<scope>): ...` — Code formatting updates.
 
 ---
 
@@ -116,6 +128,7 @@ npm run build
 ```
 
 If any check returns a non-zero exit code or logs a compilation warning:
+
 1.  **Stop immediately.**
 2.  Fix the issues.
 3.  Re-run the verification suite.
@@ -126,6 +139,7 @@ If any check returns a non-zero exit code or logs a compilation warning:
 ## 5. Feature Completion Protocol
 
 When you complete a feature:
+
 1.  **Verify UI states:** Test focus states, hover scales, active menu transitions, and mobile responsiveness.
 2.  **Verify production builds:** Run `npm run build` and preview the build locally using `npm run preview`.
 3.  **Update Feature Tracking:** Set the completed feature status to `Done` in `FEATURE_TRACKING.md`, add completion notes, and note your verification steps.

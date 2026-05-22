@@ -2,8 +2,12 @@ function App() {
   return (
     <div className="min-h-screen bg-pageBg flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-card shadow-card p-8 text-center">
-        <h1 className="text-3xl font-bold text-dark mb-4">Purity UI Dashboard</h1>
-        <p className="text-muted mb-6">Setup and Design System Initialized Successfully.</p>
+        <h1 className="text-3xl font-bold text-dark mb-4">
+          Purity UI Dashboard
+        </h1>
+        <p className="text-muted mb-6">
+          Setup and Design System Initialized Successfully.
+        </p>
         <div className="flex justify-center gap-4">
           <span className="px-4 py-2 bg-primary/10 text-primary font-bold rounded-button text-sm">
             Tailwind CSS
