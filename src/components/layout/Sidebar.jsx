@@ -81,7 +81,7 @@ export default function Sidebar() {
       </div>
 
       {/* Need Help CTA Card */}
-      <div className="mt-8 bg-primary rounded-2xl p-4 text-white shadow-md relative overflow-hidden flex flex-col gap-4">
+      <div className="mt-8 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl p-4 text-white shadow-md relative overflow-hidden flex flex-col gap-4">
         {/* Decorative circle */}
         <div className="absolute -top-6 -right-6 w-20 h-20 rounded-full bg-white/10" />
 
