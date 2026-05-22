@@ -119,7 +119,7 @@ export default function ProfileProjects() {
             {/* Footer row (Actions + Avatar group) */}
             <div className="flex justify-between items-center mt-2">
               <button className="border border-primary text-primary hover:bg-primary/5 text-[9px] font-extrabold px-5 py-2.5 rounded-xl transition-all uppercase tracking-wider">
-                VIEW PROJECT
+                VIEW ALL
               </button>
 
               {/* Avatar Cluster */}

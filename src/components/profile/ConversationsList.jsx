@@ -1,33 +1,27 @@
 const conversations = [
   {
-    name: "Sophie B.",
+    name: "Esthera Jackson",
     message: "Hi! I need more informations...",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop",
   },
   {
-    name: "Anne Marie",
+    name: "Esthera Jackson",
     message: "Awesome work, can you change...",
     avatar:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&auto=format&fit=crop",
   },
   {
-    name: "Ivanna",
+    name: "Esthera Jackson",
     message: "Have a great afternoon...",
     avatar:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&auto=format&fit=crop",
   },
   {
-    name: "Peterson",
+    name: "Esthera Jackson",
     message: "About files I can...",
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop",
-  },
-  {
-    name: "Nick Daniel",
-    message: "Great project, hope you...",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop",
   },
 ];
 
