@@ -21,7 +21,7 @@ export default function Topbar() {
     <header
       className={`flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-0 z-30 transition-all duration-150 ${
         isProfilePage
-          ? "absolute top-0 left-0 right-0 bg-transparent pt-10 pb-4 pl-10 pr-8"
+          ? "absolute top-0 left-0 lg:left-64 right-0 bg-transparent pt-10 pb-4 pl-10 pr-8"
           : "sticky top-0 backdrop-blur-md bg-gray-50/40 py-4 px-6"
       }`}
     >
