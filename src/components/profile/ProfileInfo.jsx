@@ -34,10 +34,10 @@ export default function ProfileInfo() {
       <div className="flex flex-col gap-3.5">
         {profileDetails.map((detail) => (
           <div key={detail.label} className="flex gap-2 text-xs">
-            <span className="font-bold text-dark shrink-0">
+            <span className="text-lightText font-bold shrink-0">
               {detail.label}:
             </span>
-            <span className="text-lightText font-semibold">{detail.value}</span>
+            <span className="text-dark font-medium">{detail.value}</span>
           </div>
         ))}
 
