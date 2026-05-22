@@ -86,7 +86,7 @@ export default function AuthLayout() {
       </header>
 
       {/* Main Outlet (Centering target contents) */}
-      <main className="flex-1 w-full pt-28 pb-12">
+      <main className={`flex-1 w-full ${isSignUp ? "pt-0" : "pt-28"} pb-12`}>
         <Outlet />
       </main>
 
