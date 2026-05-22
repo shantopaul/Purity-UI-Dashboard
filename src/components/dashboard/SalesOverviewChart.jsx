@@ -9,25 +9,28 @@ import {
 } from "recharts";
 
 const mockData = [
-  { month: "Jan", sales2022: 500, sales2021: 200 },
-  { month: "Feb", sales2022: 250, sales2021: 230 },
-  { month: "Mar", sales2022: 300, sales2021: 400 },
-  { month: "Apr", sales2022: 220, sales2021: 300 },
-  { month: "May", sales2022: 500, sales2021: 350 },
-  { month: "Jun", sales2022: 250, sales2021: 370 },
-  { month: "Jul", sales2022: 300, sales2021: 420 },
-  { month: "Aug", sales2022: 230, sales2021: 200 },
-  { month: "Sep", sales2022: 500, sales2021: 300 },
+  { month: "Jan", sales2022: 180, sales2021: 500 },
+  { month: "Feb", sales2022: 210, sales2021: 300 },
+  { month: "Mar", sales2022: 200, sales2021: 120 },
+  { month: "Apr", sales2022: 340, sales2021: 270 },
+  { month: "May", sales2022: 360, sales2021: 200 },
+  { month: "Jun", sales2022: 470, sales2021: 260 },
+  { month: "Jul", sales2022: 390, sales2021: 210 },
+  { month: "Aug", sales2022: 320, sales2021: 120 },
+  { month: "Sep", sales2022: 360, sales2021: 180 },
+  { month: "Oct", sales2022: 210, sales2021: 120 },
+  { month: "Nov", sales2022: 410, sales2021: 170 },
+  { month: "Dec", sales2022: 430, sales2021: 135 },
 ];
 
 export default function SalesOverviewChart() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-4">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-4 w-full h-full">
       {/* Header Info */}
       <div>
-        <h3 className="text-sm font-bold text-dark">Sales Overview</h3>
+        <h3 className="text-sm font-bold text-dark">Sales overview</h3>
         <p className="text-xs text-lightText mt-0.5">
-          <span className="text-success font-bold">(+5%) more</span> in 2022
+          <span className="text-success font-bold">(+5) more</span> in 2021
         </p>
       </div>
 
@@ -51,7 +54,7 @@ export default function SalesOverviewChart() {
             <CartesianGrid
               strokeDasharray="3 3"
               vertical={false}
-              stroke="#F7FAFC"
+              stroke="#EDF2F7"
             />
             <XAxis
               dataKey="month"

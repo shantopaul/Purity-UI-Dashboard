@@ -25,3 +25,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project screenshot and asset assets
+New Sencenshot/
+Purity UI Dashboard - Chakra UI Dashboard (Community)/
