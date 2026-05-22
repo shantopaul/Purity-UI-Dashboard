@@ -1,15 +1,36 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Home, Shield, Wrench } from "lucide-react";
 import backgroundImg from "../../assets/images/background.png";
 
 export default function ProfileHeader() {
   const [activeTab, setActiveTab] = useState("Overview");
+  const [avatar, setAvatar] = useState(
+    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+  );
+  const fileInputRef = useRef(null);
 
   const tabs = [
     { name: "Overview", icon: Home },
     { name: "Teams", icon: Shield },
     { name: "Projects", icon: Wrench },
   ];
+
+  const handleEditClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        if (event.target?.result) {
+          setAvatar(event.target.result);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   return (
     <div className="relative -mt-[76px] mb-6">
@@ -26,12 +47,22 @@ export default function ProfileHeader() {
         <div className="flex items-center gap-4">
           {/* Avatar with edit button */}
           <div className="relative shrink-0">
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleFileChange}
+              accept="image/*"
+              className="hidden"
+            />
             <img
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+              src={avatar}
               alt="Esthera Jackson"
               className="w-20 h-20 rounded-2xl object-cover shadow-md select-none"
             />
-            <button className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100 hover:bg-gray-50 transition-all text-primary">
+            <button
+              onClick={handleEditClick}
+              className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100 hover:bg-gray-50 transition-all text-primary"
+            >
               <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                 <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
               </svg>
