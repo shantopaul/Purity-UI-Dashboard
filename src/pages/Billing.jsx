@@ -7,9 +7,9 @@ import TransactionsFeed from "../components/billing/TransactionsFeed";
 
 export default function Billing() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
       {/* Left Column */}
-      <div className="lg:col-span-8 flex flex-col gap-6">
+      <div className="lg:col-span-8 flex flex-col gap-6 w-full h-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch h-auto md:h-[220px]">
           <CreditCardWidget />
           <div className="grid grid-cols-2 gap-6 h-full">
@@ -58,7 +58,7 @@ export default function Billing() {
       </div>
 
       {/* Right Column */}
-      <div className="lg:col-span-4 flex flex-col gap-6">
+      <div className="lg:col-span-4 flex flex-col gap-6 h-full">
         <InvoicesList />
         <TransactionsFeed />
       </div>

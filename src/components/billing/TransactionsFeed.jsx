@@ -51,7 +51,7 @@ const transactionGroup = [
 
 export default function TransactionsFeed() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 flex-1">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h3 className="text-sm font-bold text-dark">Your Transactions</h3>
@@ -62,7 +62,7 @@ export default function TransactionsFeed() {
       </div>
 
       {/* Transaction periods */}
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 flex-1 justify-between">
         {transactionGroup.map((group) => (
           <div key={group.period} className="flex flex-col gap-3">
             {/* Period title */}

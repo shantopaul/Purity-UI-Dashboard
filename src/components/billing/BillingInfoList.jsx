@@ -23,14 +23,14 @@ const billingProfiles = [
 
 export default function BillingInfoList() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 flex-1">
       {/* Header */}
       <div>
         <h3 className="text-sm font-bold text-dark">Billing Information</h3>
       </div>
 
       {/* Profiles list */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col justify-between flex-1 gap-4">
         {billingProfiles.map((profile) => (
           <div
             key={profile.name}
