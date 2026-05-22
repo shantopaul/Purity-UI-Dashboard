@@ -97,15 +97,12 @@ export default function ProfileProjects() {
       {/* Grid Portfolio */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-stretch">
         {projectsList.map((project) => (
-          <div
-            key={project.id}
-            className="border border-gray-100/50 rounded-xl p-4 flex flex-col gap-4 hover:shadow-sm transition-all"
-          >
+          <div key={project.id} className="flex flex-col gap-4 transition-all">
             {/* Visual Cover Card */}
             <img
               src={project.cover}
               alt={project.title}
-              className="w-full h-36 rounded-lg object-cover shadow-inner shrink-0"
+              className="w-full h-36 rounded-2xl object-cover shadow-sm shrink-0"
             />
 
             {/* Information */}
@@ -120,9 +117,9 @@ export default function ProfileProjects() {
             </div>
 
             {/* Footer row (Actions + Avatar group) */}
-            <div className="flex justify-between items-center mt-2 pt-2 border-t border-gray-50">
-              <button className="border border-primary text-primary hover:bg-primary/5 text-[9px] font-extrabold px-5 py-2 rounded-xl transition-all uppercase tracking-wider">
-                VIEW ALL
+            <div className="flex justify-between items-center mt-2">
+              <button className="border border-primary text-primary hover:bg-primary/5 text-[9px] font-extrabold px-5 py-2.5 rounded-xl transition-all uppercase tracking-wider">
+                VIEW PROJECT
               </button>
 
               {/* Avatar Cluster */}
@@ -142,7 +139,7 @@ export default function ProfileProjects() {
         ))}
 
         {/* Create a New Project dotted card */}
-        <button className="border-2 border-dashed border-gray-200 hover:border-primary/50 rounded-xl p-6 flex flex-col items-center justify-center gap-3 hover:shadow-sm transition-all group h-full min-h-[220px] select-none">
+        <button className="border-2 border-dashed border-gray-200 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:shadow-sm transition-all group h-full min-h-[220px] select-none">
           <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-lightText group-hover:text-primary group-hover:bg-primary/10 transition-colors">
             <Plus size={16} strokeWidth={2.5} />
           </div>
