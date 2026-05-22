@@ -1,8 +1,17 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { Home, User, LogIn, UserPlus } from "lucide-react";
 
 export default function AuthLayout() {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+
+  const getLinkClass = (path) => {
+    const base = "flex items-center gap-1.5 text-xs font-bold transition-colors";
+    const active = "text-dark";
+    const inactive = "text-lightText hover:text-dark";
+    return `${base} ${location.pathname === path ? active : inactive}`;
+  };
+
   return (
     <div className="min-h-screen bg-white flex flex-col justify-between relative">
       {/* Absolute Transparent/Glassmorphism Navigation Header */}
@@ -19,28 +28,28 @@ export default function AuthLayout() {
           <div className="hidden md:flex items-center gap-6">
             <Link
               to="/dashboard"
-              className="flex items-center gap-1.5 text-xs font-bold text-lightText hover:text-dark transition-colors"
+              className={getLinkClass("/dashboard")}
             >
               <Home size={13} />
               <span>DASHBOARD</span>
             </Link>
             <Link
               to="/profile"
-              className="flex items-center gap-1.5 text-xs font-bold text-lightText hover:text-dark transition-colors"
+              className={getLinkClass("/profile")}
             >
               <User size={13} />
               <span>PROFILE</span>
             </Link>
             <Link
               to="/sign-up"
-              className="flex items-center gap-1.5 text-xs font-bold text-lightText hover:text-dark transition-colors"
+              className={getLinkClass("/sign-up")}
             >
               <UserPlus size={13} />
               <span>SIGN UP</span>
             </Link>
             <Link
               to="/sign-in"
-              className="flex items-center gap-1.5 text-xs font-bold text-lightText hover:text-dark transition-colors"
+              className={getLinkClass("/sign-in")}
             >
               <LogIn size={13} />
               <span>SIGN IN</span>
