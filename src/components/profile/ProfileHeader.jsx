@@ -14,7 +14,7 @@ export default function ProfileHeader() {
   return (
     <div className="relative -mt-24 mb-6">
       {/* Background Banner */}
-      <div className="w-full h-[280px] relative bg-gradient-to-r from-[#319795] to-[#4FD1C5] rounded-[24px] overflow-hidden shadow-sm">
+      <div className="w-full h-[300px] relative bg-gradient-to-r from-[#319795] to-[#4FD1C5] rounded-[24px] overflow-hidden shadow-sm">
         <div
           style={{ backgroundImage: `url(${backgroundImg})` }}
           className="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-60"
