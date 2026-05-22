@@ -4,7 +4,7 @@ import { Home, User, LogIn, UserPlus } from "lucide-react";
 export default function AuthLayout() {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-between relative">
+    <div className="min-h-screen bg-white flex flex-col justify-between relative">
       {/* Absolute Transparent/Glassmorphism Navigation Header */}
       <header className="absolute top-0 inset-x-0 z-50 px-6 py-6 max-w-7xl mx-auto w-full">
         <nav className="flex justify-between items-center bg-white/70 backdrop-blur-md border border-white/40 px-6 py-4 rounded-2xl shadow-card transition-all">
