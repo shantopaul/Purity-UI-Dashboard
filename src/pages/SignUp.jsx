@@ -24,7 +24,7 @@ export default function SignUp() {
         />
 
         {/* Welcome Title and Subtext */}
-        <div className="absolute inset-0 flex flex-col items-center justify-start pt-20 px-6 text-center text-white select-none">
+        <div className="absolute inset-0 flex flex-col items-center justify-start pt-28 px-6 text-center text-white select-none">
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
             Welcome!
           </h1>
@@ -36,7 +36,7 @@ export default function SignUp() {
       </div>
 
       {/* Centered Overlap Registration Card */}
-      <div className="relative bg-white rounded-[24px] shadow-card max-w-[450px] w-full p-8 md:p-10 flex flex-col gap-6 z-10 mt-[150px] mb-10 border border-gray-100">
+      <div className="relative bg-white rounded-[24px] shadow-card max-w-[450px] w-full p-8 md:p-10 flex flex-col gap-6 z-10 mt-[220px] mb-10 border border-gray-100">
         {/* Header */}
         <div className="text-center flex flex-col gap-1.5">
           <h2 className="text-lg font-bold text-dark">Register with</h2>
