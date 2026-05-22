@@ -10,7 +10,7 @@ const invoices = [
 
 export default function InvoicesList() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col justify-between h-[404px]">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h3 className="text-sm font-bold text-dark">Invoices</h3>
@@ -20,7 +20,7 @@ export default function InvoicesList() {
       </div>
 
       {/* Invoice list */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col justify-between flex-1 mt-4">
         {invoices.map((inv) => (
           <div
             key={inv.code}

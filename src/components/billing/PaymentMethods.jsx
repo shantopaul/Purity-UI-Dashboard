@@ -2,7 +2,7 @@ import { Edit2 } from "lucide-react";
 
 export default function PaymentMethods() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col justify-between h-[160px]">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h3 className="text-sm font-bold text-dark">Payment Method</h3>
