@@ -22,12 +22,12 @@ export default function PlatformSettings() {
 
       <div className="flex flex-col gap-6">
         {/* Account Subgroup */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 w-full items-start">
           <span className="text-[9px] font-bold text-lightText tracking-wider uppercase">
             Account
           </span>
 
-          <div className="flex flex-col gap-3.5">
+          <div className="flex flex-col gap-3.5 w-full items-start">
             {[
               { key: "follows", label: "Email me when someone follows me" },
               {
@@ -69,12 +69,12 @@ export default function PlatformSettings() {
         </div>
 
         {/* Application Subgroup */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 w-full items-start">
           <span className="text-[9px] font-bold text-lightText tracking-wider uppercase">
             Application
           </span>
 
-          <div className="flex flex-col gap-3.5">
+          <div className="flex flex-col gap-3.5 w-full items-start">
             {[
               { key: "launches", label: "New launches and projects" },
               { key: "updates", label: "Monthly product updates" },
