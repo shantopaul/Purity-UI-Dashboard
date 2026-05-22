@@ -1,11 +1,4 @@
-import {
-  Bell,
-  ShoppingCart,
-  CreditCard,
-  Key,
-  Settings,
-  Plus,
-} from "lucide-react";
+import { Bell, CreditCard, Key, Settings, Code } from "lucide-react";
 
 const timelineData = [
   {
@@ -15,52 +8,52 @@ const timelineData = [
     icon: Bell,
   },
   {
-    title: "New order #18318",
+    title: "New order #4219423",
     time: "21 DEC 11:21 PM",
     color: "border-red-500 text-red-500",
-    icon: ShoppingCart,
+    icon: Code,
   },
   {
-    title: "Server payments for April",
+    title: "Server Payments for April",
     time: "21 DEC 9:28 PM",
     color: "border-blue-500 text-blue-500",
     icon: CreditCard,
   },
   {
-    title: "New card added for order #88",
+    title: "New card added for order #3210145",
     time: "20 DEC 3:52 PM",
-    color: "border-amber-500 text-amber-500",
-    icon: Plus,
+    color: "border-orange-500 text-orange-500",
+    icon: CreditCard,
   },
   {
-    title: "Unlock packages for development",
-    time: "18 DEC 4:41 PM",
+    title: "Unlock packages for Development",
+    time: "19 DEC 11:35 PM",
     color: "border-purple-500 text-purple-500",
     icon: Key,
   },
   {
-    title: "New order #95831",
-    time: "17 DEC 5:14 PM",
-    color: "border-gray-500 text-gray-500",
+    title: "New order #9851258",
+    time: "18 DEC 4:41 PM",
+    color: "border-[#FF00FF] text-[#FF00FF]",
     icon: Settings,
   },
 ];
 
 export default function OrdersOverviewTimeline() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 w-full h-full">
       {/* Header */}
       <div>
-        <h3 className="text-sm font-bold text-dark">Orders Overview</h3>
+        <h3 className="text-sm font-bold text-dark">Orders overview</h3>
         <p className="text-xs text-lightText mt-0.5">
-          <span className="text-success font-bold">(+30%)</span> this month
+          <span className="text-success font-bold">+30%</span> this month
         </p>
       </div>
 
       {/* Timeline items list */}
       <div className="flex flex-col relative pl-4">
         {/* Continuous connector line */}
-        <div className="absolute top-2 bottom-6 left-[21px] w-[1px] bg-gray-100" />
+        <div className="absolute top-2 bottom-6 left-[23px] w-[1px] bg-gray-100" />
 
         {timelineData.map((item, i) => {
           const Icon = item.icon;

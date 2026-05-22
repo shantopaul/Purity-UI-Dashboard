@@ -47,13 +47,13 @@ export default function SatisfactionRateCard() {
             <Smile size={18} strokeWidth={2.5} />
           </div>
           <span className="text-xl font-bold text-dark">{percentage}%</span>
-          <span className="text-[10px] text-lightText font-semibold mt-0.5">
+          <span className="text-[10px] text-primary font-bold mt-0.5">
             Good
           </span>
         </div>
       </div>
 
-      <div className="flex justify-between items-center bg-gray-50/80 border border-gray-100/50 rounded-xl p-3.5 mt-auto">
+      <div className="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
         <span className="text-[10px] text-lightText font-bold">0%</span>
         <span className="text-xs font-bold text-dark">95% Satisfaction</span>
         <span className="text-[10px] text-lightText font-bold">100%</span>
