@@ -15,23 +15,53 @@ export default function Topbar() {
   const formattedPageName =
     currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
 
+  const isProfilePage = location.pathname === "/profile";
+
   return (
-    <header className="flex flex-col md:flex-row md:items-center justify-between px-6 py-4 bg-transparent gap-4 md:gap-0 sticky top-0 z-30 backdrop-blur-md bg-gray-50/40">
+    <header
+      className={`flex flex-col md:flex-row md:items-center justify-between px-6 py-4 gap-4 md:gap-0 sticky top-0 z-30 transition-all duration-150 ${
+        isProfilePage
+          ? "bg-transparent backdrop-blur-none"
+          : "backdrop-blur-md bg-gray-50/40"
+      }`}
+    >
       {/* Breadcrumbs & Page Title */}
       <div className="flex flex-col">
-        <div className="flex items-center gap-1.5 text-xs text-lightText font-normal">
+        <div
+          className={`flex items-center gap-1.5 text-xs font-normal ${
+            isProfilePage ? "text-white/70" : "text-lightText"
+          }`}
+        >
           <Link
             to="/dashboard"
-            className="hover:text-primary transition-colors"
+            className={`transition-colors ${
+              isProfilePage ? "hover:text-white" : "hover:text-primary"
+            }`}
           >
             Pages
           </Link>
-          <span className="text-[10px] text-lightText select-none">/</span>
-          <span className="text-dark font-medium capitalize">
+          <span
+            className={`text-[10px] select-none ${
+              isProfilePage ? "text-white/50" : "text-lightText"
+            }`}
+          >
+            /
+          </span>
+          <span
+            className={`capitalize ${
+              isProfilePage
+                ? "text-white font-semibold"
+                : "text-dark font-medium"
+            }`}
+          >
             {currentPage}
           </span>
         </div>
-        <h1 className="text-sm font-bold text-dark mt-1 capitalize select-none">
+        <h1
+          className={`text-sm font-bold mt-1 capitalize select-none ${
+            isProfilePage ? "text-white" : "text-dark"
+          }`}
+        >
           {formattedPageName}
         </h1>
       </div>
@@ -53,7 +83,11 @@ export default function Topbar() {
         {/* Profile/Sign In Button */}
         <Link
           to="/profile"
-          className="flex items-center gap-1.5 text-xs font-bold text-lightText hover:text-dark transition-colors"
+          className={`flex items-center gap-1.5 text-xs font-bold transition-colors ${
+            isProfilePage
+              ? "text-white hover:text-white/80"
+              : "text-lightText hover:text-dark"
+          }`}
         >
           <User size={14} strokeWidth={2.5} />
           <span className="hidden sm:inline">Sign In</span>
@@ -62,7 +96,11 @@ export default function Topbar() {
         {/* Hamburger Menu Toggle (Mobile only) */}
         <button
           onClick={toggleSidebar}
-          className="lg:hidden p-2 rounded-xl text-lightText hover:text-dark hover:bg-gray-100 transition-colors"
+          className={`lg:hidden p-2 rounded-xl transition-colors ${
+            isProfilePage
+              ? "text-white hover:text-white/80 hover:bg-white/10"
+              : "text-lightText hover:text-dark hover:bg-gray-100"
+          }`}
           aria-label="Toggle mobile sidebar"
         >
           <Menu size={16} strokeWidth={2.5} />
@@ -70,7 +108,11 @@ export default function Topbar() {
 
         {/* Settings Toggle Button */}
         <button
-          className="p-2 rounded-xl text-lightText hover:text-dark hover:bg-gray-100 transition-colors"
+          className={`p-2 rounded-xl transition-colors ${
+            isProfilePage
+              ? "text-white hover:text-white/80 hover:bg-white/10"
+              : "text-lightText hover:text-dark hover:bg-gray-100"
+          }`}
           aria-label="Toggle settings"
         >
           <Settings size={14} strokeWidth={2.5} />
@@ -78,7 +120,11 @@ export default function Topbar() {
 
         {/* Notifications Icon Button */}
         <button
-          className="p-2 rounded-xl text-lightText hover:text-dark hover:bg-gray-100 transition-colors relative"
+          className={`p-2 rounded-xl transition-colors relative ${
+            isProfilePage
+              ? "text-white hover:text-white/80 hover:bg-white/10"
+              : "text-lightText hover:text-dark hover:bg-gray-100"
+          }`}
           aria-label="View notifications"
         >
           <Bell size={14} strokeWidth={2.5} />

@@ -11,7 +11,7 @@ export default function Profile() {
       <ProfileHeader />
 
       {/* Settings & Info Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-12">
         <PlatformSettings />
         <ProfileInfo />
         <ConversationsList />

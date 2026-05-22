@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Home, Shield, FolderGit2 } from "lucide-react";
+import { Home, Shield, Wrench } from "lucide-react";
 import backgroundImg from "../../assets/images/background.png";
 
 export default function ProfileHeader() {
@@ -8,19 +8,22 @@ export default function ProfileHeader() {
   const tabs = [
     { name: "Overview", icon: Home },
     { name: "Teams", icon: Shield },
-    { name: "Projects", icon: FolderGit2 },
+    { name: "Projects", icon: Wrench },
   ];
 
   return (
-    <div className="relative mb-6">
+    <div className="relative -mx-6 -mt-24 mb-6">
       {/* Background Banner */}
       <div
-        style={{ backgroundImage: `url(${backgroundImg})` }}
-        className="w-full h-48 bg-cover bg-center rounded-card shadow-sm"
+        style={{
+          backgroundImage: `linear-gradient(150deg, #319795 0%, #4FD1C5 100%), url(${backgroundImg})`,
+          backgroundBlendMode: "overlay",
+        }}
+        className="w-full h-[260px] bg-cover bg-center rounded-none shadow-sm"
       />
 
       {/* Glassmorphic Overlap Card */}
-      <div className="absolute -bottom-12 left-4 right-4 bg-white/75 backdrop-blur-md border border-white/20 rounded-card shadow-card p-4 flex flex-col md:flex-row justify-between items-center gap-4 z-10">
+      <div className="absolute -bottom-12 left-6 right-6 bg-white/75 backdrop-blur-md border border-white/20 rounded-card shadow-card p-6 flex flex-col md:flex-row justify-between items-center gap-4 z-10">
         <div className="flex items-center gap-4">
           {/* Avatar with edit button */}
           <div className="relative shrink-0">

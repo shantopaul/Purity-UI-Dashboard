@@ -9,11 +9,11 @@ export default function ProfileInfo() {
   ];
 
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 h-full">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h3 className="text-sm font-bold text-dark">Profile Information</h3>
-        <button className="p-1.5 text-lightText hover:text-dark hover:bg-gray-50 rounded-lg transition-colors">
+        <button className="text-lightText hover:text-dark transition-colors">
           <Edit2 size={12} strokeWidth={2.5} />
         </button>
       </div>

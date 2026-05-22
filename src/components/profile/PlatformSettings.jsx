@@ -15,7 +15,7 @@ export default function PlatformSettings() {
   };
 
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 h-full">
       <div>
         <h3 className="text-sm font-bold text-dark">Platform Settings</h3>
       </div>

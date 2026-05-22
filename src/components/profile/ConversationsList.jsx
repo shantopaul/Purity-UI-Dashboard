@@ -27,14 +27,14 @@ const conversations = [
 
 export default function ConversationsList() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 h-full">
       {/* Header */}
       <div>
         <h3 className="text-sm font-bold text-dark">Conversations</h3>
       </div>
 
       {/* Conversations list */}
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 flex-1 justify-between">
         {conversations.map((conv, idx) => (
           <div key={idx} className="flex justify-between items-center gap-4">
             <div className="flex items-center gap-3">
