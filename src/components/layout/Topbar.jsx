@@ -52,7 +52,7 @@ export default function Topbar() {
 
         {/* Profile/Sign In Button */}
         <Link
-          to="/profile"
+          to="/sign-in"
           className="flex items-center gap-1.5 text-xs font-bold text-lightText hover:text-dark transition-colors"
         >
           <User size={14} strokeWidth={2.5} />
