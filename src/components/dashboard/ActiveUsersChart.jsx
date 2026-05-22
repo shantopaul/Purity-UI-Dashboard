@@ -29,7 +29,7 @@ const statList = [
 
 export default function ActiveUsersChart() {
   return (
-    <div className="bg-white rounded-card shadow-card p-4 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-4 flex flex-col gap-6 w-full h-full">
       {/* Chart container with dark background */}
       <div className="bg-[#1A202C] rounded-xl p-4 shadow-inner relative overflow-hidden">
         <ResponsiveContainer width="100%" height={220}>

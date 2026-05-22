@@ -44,30 +44,30 @@ export default function Dashboard() {
 
       {/* Welcome Card & Work with Rockets Card Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 flex flex-col">
           <WelcomeCard />
         </div>
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 flex flex-col">
           <WorkWithRocketsCard />
         </div>
       </div>
 
       {/* Active Users & Sales Overview Charts Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 flex flex-col">
           <ActiveUsersChart />
         </div>
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 flex flex-col">
           <SalesOverviewChart />
         </div>
       </div>
 
       {/* Projects Table & Orders Timeline Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-        <div className="lg:col-span-8">
+        <div className="lg:col-span-8 flex flex-col">
           <MiniProjectsTable />
         </div>
-        <div className="lg:col-span-4">
+        <div className="lg:col-span-4 flex flex-col">
           <OrdersOverviewTimeline />
         </div>
       </div>

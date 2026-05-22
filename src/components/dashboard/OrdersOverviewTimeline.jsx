@@ -1,10 +1,4 @@
-import {
-  Bell,
-  CreditCard,
-  Key,
-  Settings,
-  Code,
-} from "lucide-react";
+import { Bell, CreditCard, Key, Settings, Code } from "lucide-react";
 
 const timelineData = [
   {
@@ -47,7 +41,7 @@ const timelineData = [
 
 export default function OrdersOverviewTimeline() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 w-full h-full">
       {/* Header */}
       <div>
         <h3 className="text-sm font-bold text-dark">Orders overview</h3>

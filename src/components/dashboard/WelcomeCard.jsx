@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function WelcomeCard() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col md:flex-row gap-6 items-stretch min-h-[290px] justify-between">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col md:flex-row gap-6 items-stretch min-h-[290px] justify-between w-full h-full">
       {/* Left Text details */}
       <div className="flex-1 flex flex-col justify-between py-1 gap-4">
         <div className="flex flex-col gap-1">

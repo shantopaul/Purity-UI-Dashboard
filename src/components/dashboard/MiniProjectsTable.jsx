@@ -116,7 +116,7 @@ const renderLogo = (type) => {
 
 export default function MiniProjectsTable() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 overflow-hidden">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 overflow-hidden w-full h-full">
       {/* Header */}
       <div className="flex justify-between items-center">
         <div>

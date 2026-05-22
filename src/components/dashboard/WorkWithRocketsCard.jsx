@@ -5,7 +5,7 @@ export default function WorkWithRocketsCard() {
   return (
     <div
       style={{ backgroundImage: `url(${rocketsBg})` }}
-      className="bg-cover bg-center rounded-card shadow-card p-6 text-white flex flex-col justify-between min-h-[290px] relative overflow-hidden select-none"
+      className="bg-cover bg-center rounded-card shadow-card p-6 text-white flex flex-col justify-between min-h-[290px] relative overflow-hidden select-none w-full h-full"
     >
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/45 backdrop-brightness-[0.75] z-0" />

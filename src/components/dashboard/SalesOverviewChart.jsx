@@ -25,7 +25,7 @@ const mockData = [
 
 export default function SalesOverviewChart() {
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-4">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-4 w-full h-full">
       {/* Header Info */}
       <div>
         <h3 className="text-sm font-bold text-dark">Sales overview</h3>
