@@ -101,14 +101,57 @@ git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI D
   git -c safe.directory="k:/AndroidDev/tools/Project/React Project/10. Purity UI Dashboard ( Freelancer Project )/Purity-UI-Dashboard-Figma-To-React" push origin feature/auth-forms
   ```
 
-### 3.3 Commit Message Standards
+### 3.3 Commit Message Standards & Professional Writing Guide
 
-Use the Conventional Commits specification:
+To maintain a clean, readable, and professional project history (crucial for client deliverables, startup products, and enterprise applications), all Git commits must follow the **Conventional Commits** specification.
 
-- `feat(<scope>): ...` — New layout or component additions.
-- `fix(<scope>): ...` — Visual alignment or responsive behavior corrections.
-- `docs(<scope>): ...` — Updates to planning or project files.
-- `style(<scope>): ...` — Code formatting updates.
+#### 3.3.1 Commit Header Structure
+
+Every commit message header must have a structural format consisting of a **type**, a **scope**, and a **subject**:
+
+```txt
+<type>(<scope>): <subject>
+```
+
+- **Type:** Indicates the intent of the commit. Must be one of the following:
+  - `feat`: A new layout, component, route, or business logic.
+  - `fix`: A correction for a visual alignment issue, responsive bug, logic error, or broken style.
+  - `docs`: Documentation changes only (e.g. updating planning files, instructions, or README).
+  - `style`: Code style improvements that do not affect code logic (formatting, spacing, semi-colons).
+  - `refactor`: Code changes that neither fix a bug nor add a feature (e.g., simplifying a component structure).
+  - `perf`: A code change that improves rendering speed, decreases resource usage, or optimizes asset loading.
+  - `chore`: Updates to build scripts, configurations, package.json dependencies, or repository tooling.
+- **Scope:** Specifies the context or component targeted by the change. Examples include: `setup`, `layout`, `sidebar`, `billing`, `profile`, `auth`, `chart`, `gitignore`. Keep scopes lowercase and brief.
+- **Subject:** A concise description of the changes:
+  - Use the **imperative mood** (e.g., "add input styles" instead of "added input styles" or "adds input styles").
+  - Do not capitalize the first letter of the subject.
+  - Do not end the subject with a period.
+
+#### 3.3.2 Standardized Commit Examples
+
+- **Good Examples (Imperative, Clear, Structured):**
+  - `feat(setup): configure tailwind design tokens and custom border radius`
+  - `fix(sidebar): align navigation text on mobile viewports`
+  - `style(gitignore): add environment variables to ignore filters`
+  - `docs(plan): update feature tracking status for milestone F01`
+- **Bad Examples (To Be Avoided):**
+  - `fixed padding` (Missing type, scope, and uses past tense)
+  - `feat: Done with F01!` (Missing scope, informal tone, contains exclamation mark)
+  - `refactor(auth) Form looks better now.` (Subject starts with capital letter, ends with a period, uses subjective quality language)
+
+#### 3.3.3 Multi-Line Commits (For Large Feature Merges)
+
+For complex changes, provide a body and footer separated by blank lines:
+
+```txt
+feat(billing): implement interactive credit card display
+
+- add gradient-based digital debit card container
+- implement flip transition using framer-motion on click
+- integrate raw input validation for expiration date and cvc
+
+closes #24
+```
 
 ---
 
