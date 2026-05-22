@@ -82,7 +82,7 @@ export default function Topbar() {
 
         {/* Profile/Sign In Button */}
         <Link
-          to="/profile"
+          to="/sign-in"
           className={`flex items-center gap-1.5 text-xs font-bold transition-colors ${
             isProfilePage
               ? "text-white hover:text-white/80"
