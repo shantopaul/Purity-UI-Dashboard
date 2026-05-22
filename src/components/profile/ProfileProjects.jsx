@@ -1,14 +1,29 @@
+import { Plus } from "lucide-react";
+
 const projectsList = [
   {
     id: "Project #1",
     title: "Modern",
     description:
       "As Uber works through a huge amount of internal management turmoil.",
-    color: "bg-gradient-to-br from-pink-400 to-rose-500",
+    cover:
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=600&auto=format&fit=crop",
     collaborators: [
-      { name: "Esthera", init: "EJ", bg: "bg-primary" },
-      { name: "Alexa", init: "AL", bg: "bg-teal-400" },
-      { name: "Richard", init: "RG", bg: "bg-amber-400" },
+      {
+        name: "Esthera",
+        avatar:
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Alexa",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Richard",
+        avatar:
+          "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop",
+      },
     ],
   },
   {
@@ -16,11 +31,24 @@ const projectsList = [
     title: "Scandinavian",
     description:
       "Music is something that every person has his or her own specific opinion about.",
-    color: "bg-gradient-to-br from-teal-400 to-cyan-500",
+    cover:
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600&auto=format&fit=crop",
     collaborators: [
-      { name: "Laurent", init: "LM", bg: "bg-blue-400" },
-      { name: "Firiou", init: "FJ", bg: "bg-indigo-400" },
-      { name: "Elisa", init: "EB", bg: "bg-pink-400" },
+      {
+        name: "Laurent",
+        avatar:
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Firiou",
+        avatar:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Elisa",
+        avatar:
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop",
+      },
     ],
   },
   {
@@ -28,12 +56,29 @@ const projectsList = [
     title: "Minimalist",
     description:
       "Different people have different taste, and various types of music.",
-    color: "bg-gradient-to-br from-indigo-400 to-purple-500",
+    cover:
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop",
     collaborators: [
-      { name: "Miriam", init: "ME", bg: "bg-purple-400" },
-      { name: "Richard", init: "RG", bg: "bg-amber-400" },
-      { name: "Alexa", init: "AL", bg: "bg-teal-400" },
-      { name: "Firiou", init: "FJ", bg: "bg-indigo-400" },
+      {
+        name: "Miriam",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Richard",
+        avatar:
+          "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Alexa",
+        avatar:
+          "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Firiou",
+        avatar:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop",
+      },
     ],
   },
 ];
@@ -50,15 +95,14 @@ export default function ProfileProjects() {
       </div>
 
       {/* Grid Portfolio */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-stretch">
         {projectsList.map((project) => (
-          <div
-            key={project.id}
-            className="border border-gray-100/50 rounded-xl p-4 flex flex-col gap-4 hover:shadow-sm transition-all"
-          >
+          <div key={project.id} className="flex flex-col gap-4 transition-all">
             {/* Visual Cover Card */}
-            <div
-              className={`w-full h-36 rounded-lg shadow-inner ${project.color}`}
+            <img
+              src={project.cover}
+              alt={project.title}
+              className="w-full h-36 rounded-2xl object-cover shadow-sm shrink-0"
             />
 
             {/* Information */}
@@ -73,26 +117,36 @@ export default function ProfileProjects() {
             </div>
 
             {/* Footer row (Actions + Avatar group) */}
-            <div className="flex justify-between items-center mt-2 pt-2 border-t border-gray-50">
-              <button className="text-[10px] font-extrabold text-primary hover:underline uppercase tracking-wider">
-                View Project
+            <div className="flex justify-between items-center mt-2">
+              <button className="border border-primary text-primary hover:bg-primary/5 text-[9px] font-extrabold px-5 py-2.5 rounded-xl transition-all uppercase tracking-wider">
+                VIEW ALL
               </button>
 
               {/* Avatar Cluster */}
               <div className="flex -space-x-1.5 items-center select-none">
                 {project.collaborators.map((user, i) => (
-                  <div
+                  <img
                     key={i}
+                    src={user.avatar}
+                    alt={user.name}
                     title={user.name}
-                    className={`w-6 h-6 rounded-full flex items-center justify-center text-white font-extrabold text-[8px] border-2 border-white cursor-help shadow-sm shrink-0 ${user.bg}`}
-                  >
-                    {user.init}
-                  </div>
+                    className="w-6 h-6 rounded-full object-cover border-2 border-white cursor-help shadow-sm shrink-0"
+                  />
                 ))}
               </div>
             </div>
           </div>
         ))}
+
+        {/* Create a New Project dotted card */}
+        <button className="border-2 border-dashed border-gray-200 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:shadow-sm transition-all group h-full min-h-[220px] select-none">
+          <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-lightText group-hover:text-primary group-hover:bg-primary/10 transition-colors">
+            <Plus size={16} strokeWidth={2.5} />
+          </div>
+          <span className="text-xs font-bold text-lightText group-hover:text-primary transition-colors">
+            Create a New Project
+          </span>
+        </button>
       </div>
     </div>
   );

@@ -2,12 +2,12 @@ import { useState } from "react";
 
 export default function PlatformSettings() {
   const [settings, setSettings] = useState({
-    answers: true,
-    mentions: false,
     follows: true,
+    answers: false,
+    mentions: true,
     launches: false,
-    updates: true,
-    newsletter: false,
+    updates: false,
+    newsletter: true,
   });
 
   const toggleSetting = (key) => {
@@ -15,35 +15,32 @@ export default function PlatformSettings() {
   };
 
   return (
-    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6">
+    <div className="bg-white rounded-card shadow-card p-6 flex flex-col gap-6 h-full">
       <div>
         <h3 className="text-sm font-bold text-dark">Platform Settings</h3>
       </div>
 
       <div className="flex flex-col gap-6">
         {/* Account Subgroup */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 w-full items-start">
           <span className="text-[9px] font-bold text-lightText tracking-wider uppercase">
             Account
           </span>
 
-          <div className="flex flex-col gap-3.5">
+          <div className="flex flex-col gap-3.5 w-full items-start">
             {[
+              { key: "follows", label: "Email me when someone follows me" },
               {
                 key: "answers",
                 label: "Email me when someone answers on my post",
               },
               { key: "mentions", label: "Email me when someone mentions me" },
-              { key: "follows", label: "Email me when someone follows me" },
             ].map((item) => (
               <label
                 key={item.key}
-                className="flex items-center justify-between cursor-pointer group"
+                className="flex items-center gap-3 cursor-pointer group select-none"
               >
-                <span className="text-[10px] text-lightText group-hover:text-dark font-semibold transition-colors">
-                  {item.label}
-                </span>
-                <div className="relative">
+                <div className="relative shrink-0">
                   <input
                     type="checkbox"
                     checked={settings[item.key]}
@@ -52,29 +49,32 @@ export default function PlatformSettings() {
                   />
                   {/* Switch track background */}
                   <div
-                    className={`w-8 h-4.5 rounded-full transition-colors ${
+                    className={`w-[34px] h-[20px] rounded-full transition-colors ${
                       settings[item.key] ? "bg-primary" : "bg-gray-200"
                     }`}
                   />
                   {/* Switch handle slider */}
                   <div
-                    className={`absolute top-0.5 left-0.5 w-3.5 h-3.5 rounded-full bg-white transition-transform ${
+                    className={`absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-transform ${
                       settings[item.key] ? "translate-x-3.5" : "translate-x-0"
                     }`}
                   />
                 </div>
+                <span className="text-xs text-gray-500 group-hover:text-dark font-normal transition-colors">
+                  {item.label}
+                </span>
               </label>
             ))}
           </div>
         </div>
 
         {/* Application Subgroup */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 w-full items-start">
           <span className="text-[9px] font-bold text-lightText tracking-wider uppercase">
             Application
           </span>
 
-          <div className="flex flex-col gap-3.5">
+          <div className="flex flex-col gap-3.5 w-full items-start">
             {[
               { key: "launches", label: "New launches and projects" },
               { key: "updates", label: "Monthly product updates" },
@@ -82,12 +82,9 @@ export default function PlatformSettings() {
             ].map((item) => (
               <label
                 key={item.key}
-                className="flex items-center justify-between cursor-pointer group"
+                className="flex items-center gap-3 cursor-pointer group select-none"
               >
-                <span className="text-[10px] text-lightText group-hover:text-dark font-semibold transition-colors">
-                  {item.label}
-                </span>
-                <div className="relative">
+                <div className="relative shrink-0">
                   <input
                     type="checkbox"
                     checked={settings[item.key]}
@@ -95,16 +92,19 @@ export default function PlatformSettings() {
                     className="sr-only"
                   />
                   <div
-                    className={`w-8 h-4.5 rounded-full transition-colors ${
+                    className={`w-[34px] h-[20px] rounded-full transition-colors ${
                       settings[item.key] ? "bg-primary" : "bg-gray-200"
                     }`}
                   />
                   <div
-                    className={`absolute top-0.5 left-0.5 w-3.5 h-3.5 rounded-full bg-white transition-transform ${
+                    className={`absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-transform ${
                       settings[item.key] ? "translate-x-3.5" : "translate-x-0"
                     }`}
                   />
                 </div>
+                <span className="text-xs text-gray-500 group-hover:text-dark font-normal transition-colors">
+                  {item.label}
+                </span>
               </label>
             ))}
           </div>
