@@ -14,13 +14,12 @@ export default function ProfileHeader() {
   return (
     <div className="relative -mx-6 -mt-24 mb-6">
       {/* Background Banner */}
-      <div
-        style={{
-          backgroundImage: `linear-gradient(150deg, #319795 0%, #4FD1C5 100%), url(${backgroundImg})`,
-          backgroundBlendMode: "overlay",
-        }}
-        className="w-full h-[260px] bg-cover bg-center rounded-none shadow-sm"
-      />
+      <div className="w-full h-[260px] relative bg-gradient-to-r from-[#319795] to-[#4FD1C5] rounded-none overflow-hidden shadow-sm">
+        <div
+          style={{ backgroundImage: `url(${backgroundImg})` }}
+          className="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-60"
+        />
+      </div>
 
       {/* Glassmorphic Overlap Card */}
       <div className="absolute -bottom-12 left-6 right-6 bg-white/75 backdrop-blur-md border border-white/20 rounded-card shadow-card p-6 flex flex-col md:flex-row justify-between items-center gap-4 z-10">

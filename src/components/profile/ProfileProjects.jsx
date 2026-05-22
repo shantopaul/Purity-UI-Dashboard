@@ -7,11 +7,23 @@ const projectsList = [
     description:
       "As Uber works through a huge amount of internal management turmoil.",
     cover:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=600&auto=format&fit=crop",
     collaborators: [
-      { name: "Esthera", init: "EJ", bg: "bg-primary" },
-      { name: "Alexa", init: "AL", bg: "bg-teal-400" },
-      { name: "Richard", init: "RG", bg: "bg-amber-400" },
+      {
+        name: "Esthera",
+        avatar:
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Alexa",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Richard",
+        avatar:
+          "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop",
+      },
     ],
   },
   {
@@ -20,11 +32,23 @@ const projectsList = [
     description:
       "Music is something that every person has his or her own specific opinion about.",
     cover:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600&auto=format&fit=crop",
     collaborators: [
-      { name: "Laurent", init: "LM", bg: "bg-blue-400" },
-      { name: "Firiou", init: "FJ", bg: "bg-indigo-400" },
-      { name: "Elisa", init: "EB", bg: "bg-pink-400" },
+      {
+        name: "Laurent",
+        avatar:
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Firiou",
+        avatar:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Elisa",
+        avatar:
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop",
+      },
     ],
   },
   {
@@ -33,12 +57,28 @@ const projectsList = [
     description:
       "Different people have different taste, and various types of music.",
     cover:
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop",
     collaborators: [
-      { name: "Miriam", init: "ME", bg: "bg-purple-400" },
-      { name: "Richard", init: "RG", bg: "bg-amber-400" },
-      { name: "Alexa", init: "AL", bg: "bg-teal-400" },
-      { name: "Firiou", init: "FJ", bg: "bg-indigo-400" },
+      {
+        name: "Miriam",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Richard",
+        avatar:
+          "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Alexa",
+        avatar:
+          "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop",
+      },
+      {
+        name: "Firiou",
+        avatar:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop",
+      },
     ],
   },
 ];
@@ -88,13 +128,13 @@ export default function ProfileProjects() {
               {/* Avatar Cluster */}
               <div className="flex -space-x-1.5 items-center select-none">
                 {project.collaborators.map((user, i) => (
-                  <div
+                  <img
                     key={i}
+                    src={user.avatar}
+                    alt={user.name}
                     title={user.name}
-                    className={`w-6 h-6 rounded-full flex items-center justify-center text-white font-extrabold text-[8px] border-2 border-white cursor-help shadow-sm shrink-0 ${user.bg}`}
-                  >
-                    {user.init}
-                  </div>
+                    className="w-6 h-6 rounded-full object-cover border-2 border-white cursor-help shadow-sm shrink-0"
+                  />
                 ))}
               </div>
             </div>

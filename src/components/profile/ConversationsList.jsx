@@ -1,27 +1,33 @@
 const conversations = [
   {
-    name: "Esthera Jackson",
+    name: "Sophie B.",
     message: "Hi! I need more informations...",
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop",
   },
   {
-    name: "Esthera Jackson",
+    name: "Anne Marie",
     message: "Awesome work, can you change...",
     avatar:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&auto=format&fit=crop",
   },
   {
-    name: "Esthera Jackson",
+    name: "Ivanna",
     message: "Have a great afternoon...",
     avatar:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&auto=format&fit=crop",
   },
   {
-    name: "Esthera Jackson",
+    name: "Peterson",
     message: "About files I can...",
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop",
+  },
+  {
+    name: "Nick Daniel",
+    message: "Great project, hope you...",
+    avatar:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop",
   },
 ];
 
@@ -42,7 +48,7 @@ export default function ConversationsList() {
               <img
                 src={conv.avatar}
                 alt={conv.name}
-                className="w-12 h-12 rounded-2xl object-cover shadow-sm select-none shrink-0"
+                className="w-12 h-12 rounded-full object-cover shadow-sm select-none shrink-0"
               />
               {/* Detail text */}
               <div className="flex flex-col">

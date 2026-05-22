@@ -38,12 +38,9 @@ export default function PlatformSettings() {
             ].map((item) => (
               <label
                 key={item.key}
-                className="flex items-center justify-between cursor-pointer group"
+                className="flex items-center gap-3.5 cursor-pointer group select-none"
               >
-                <span className="text-[10px] text-lightText group-hover:text-dark font-semibold transition-colors">
-                  {item.label}
-                </span>
-                <div className="relative">
+                <div className="relative shrink-0">
                   <input
                     type="checkbox"
                     checked={settings[item.key]}
@@ -63,6 +60,9 @@ export default function PlatformSettings() {
                     }`}
                   />
                 </div>
+                <span className="text-[10px] text-lightText group-hover:text-dark font-semibold transition-colors">
+                  {item.label}
+                </span>
               </label>
             ))}
           </div>
@@ -82,12 +82,9 @@ export default function PlatformSettings() {
             ].map((item) => (
               <label
                 key={item.key}
-                className="flex items-center justify-between cursor-pointer group"
+                className="flex items-center gap-3.5 cursor-pointer group select-none"
               >
-                <span className="text-[10px] text-lightText group-hover:text-dark font-semibold transition-colors">
-                  {item.label}
-                </span>
-                <div className="relative">
+                <div className="relative shrink-0">
                   <input
                     type="checkbox"
                     checked={settings[item.key]}
@@ -105,6 +102,9 @@ export default function PlatformSettings() {
                     }`}
                   />
                 </div>
+                <span className="text-[10px] text-lightText group-hover:text-dark font-semibold transition-colors">
+                  {item.label}
+                </span>
               </label>
             ))}
           </div>
