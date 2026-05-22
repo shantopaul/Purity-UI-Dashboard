@@ -23,7 +23,7 @@ const mockData = [
 const statList = [
   { label: "Users", count: "32.9k", icon: Users, progress: 60 },
   { label: "Clicks", count: "2.42m", icon: Globe, progress: 80 },
-  { label: "Sales", count: "$2,400", icon: Wallet, progress: 30 },
+  { label: "Sales", count: "$52,400", icon: Wallet, progress: 30 },
   { label: "Items", count: "320", icon: ShoppingCart, progress: 40 },
 ];
 
@@ -88,7 +88,7 @@ export default function ActiveUsersChart() {
           return (
             <div key={stat.label} className="flex flex-col gap-1.5">
               <div className="flex items-center gap-1.5 text-lightText">
-                <div className="w-5 h-5 rounded-md bg-gray-50 flex items-center justify-center text-primary shadow-sm border border-gray-100/50">
+                <div className="w-5 h-5 rounded-md bg-primary flex items-center justify-center text-white shadow-sm shrink-0">
                   <Icon size={11} strokeWidth={2.5} />
                 </div>
                 <span className="text-[10px] font-bold uppercase tracking-wider hidden sm:inline">

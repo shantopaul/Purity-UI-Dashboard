@@ -41,7 +41,7 @@ export default function ReferralTrackingCard() {
               Bonus
             </span>
             <span className="text-sm font-bold text-dark block mt-0.5">
-              1,465 XP
+              1,466 XP
             </span>
           </div>
         </div>
