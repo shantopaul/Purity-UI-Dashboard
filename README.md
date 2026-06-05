@@ -10,27 +10,27 @@ Here is a visual walk-through of the application pages in serial order:
 
 ### 1. Sign In Screen
 A clean, split-screen authentication page featuring email/password controls, custom switches (with "Remember me" checked by default), social login shortcuts, and a prominent Chakra branded background banner.
-![Sign In Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/Sign%20In%20Screen.png)
+![Sign In Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/sign-in-page.png)
 
 ### 2. Sign Up Screen
 An overlapping registration layout featuring full credentials form fields, a toggle switch for terms and agreements, and a vibrant teal header block.
-![Sign Up Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/Sign%20Up%20Screen.png)
+![Sign Up Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/sign-up-page.png)
 
 ### 3. Dashboard Screen
 The primary analytics overview hub, containing key performance indicator stats, an interactive sales performance chart (Recharts Area), active user metrics (Recharts Bar Chart), and a visual satisfaction dial SVG.
-![Dashboard Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/Dashboard%20Screen.png)
+![Dashboard Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/dashboard-page.png)
 
 ### 4. Tables Screen
 A dedicated data grid containing the **Authors Table** (representing staff members, roles, online status badges, and hire dates) and the **Projects Table** (visualizing budgets, development states, and custom-styled completion bars).
-![Tables Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/Tables%20Screen.png)
+![Tables Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/tables-page.png)
 
 ### 5. Billing Screen
 A financial manager component containing a glassmorphic credit card visual, salary/payment cards, invoices, billing information cards, and a recent transactions ledger.
-![Billing Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/Billing%20Screen.png)
+![Billing Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/billing-page.png)
 
 ### 6. Profile Screen
 A user information dashboard featuring customized application configuration switches, user biography profile details, dynamic messaging logs, and project portfolio showcases.
-![Profile Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/Profile%20Screen.png)
+![Profile Screen](./Purity%20UI%20Dashboard%20-%20Chakra%20UI%20Dashboard%20%28Community%29/profile-page.png)
 
 ---
 
